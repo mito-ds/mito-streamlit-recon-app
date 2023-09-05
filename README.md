@@ -1,21 +1,27 @@
-# Data Cleanliness Verification
+# Reconciliation App
+Centralize and automate your organizations's data reconciliation. Save your organization hundreds of hours of manual work each quarter. 
 
-This Streamlit App allows you to import data, and clean it using the mitosheet library. The app is preconfigured with a set of data checks and prompts you to fix up specific issues in the data.
+Users of the reconciliation app interact with three main componets:
+1. Reconciliation Dashboard: shows the current status of all the reconciliations your organization has created. Including:
+- Number of rules checked
+- Number of data points reconciled
+- Total hours saved due to automation
+- The total number of passing and failing checks
+2. Reconciliation Creation Wizard: walks users through the process of building a new reconciliation. Using the Mito spreadsheet, non-technical users are able to create full reconciliation automations without writing any code. Analysts use: 
+- [Custom importers](https://docs.trymito.io/how-to/importing-data-to-mito/import-generated-ui-from-any-python-function) to access internal data sources.
+- [Excel and CSV import taskpane](https://docs.trymito.io/how-to/importing-data-to-mito/importing-from-excel-files) to configure data imports from their local computer or shared drives.
+- [Merge Taskpane](https://docs.trymito.io/how-to/combining-dataframes/merging-datasets-together) - to join data from multiple sources.
+- [Excel-like spreadsheet formulas](https://docs.trymito.io/how-to/interacting-with-your-data/mito-spreadsheet-formulas) and [Custom spreadsheet formulas](https://docs.trymito.io/how-to/interacting-with-your-data/bring-your-own-spreadsheet-functions) to build reconciliation logic.
+3. Reconciliation Updating Wizard: walks users through the process of rerunning an existing reconciliation with new data.   
 
-It ensures the your data has the following properties:
-1. The first column is the issue date, and is of type datetime.
-2. The issue date column is a datetime column.
-3. There are no null values in the issue date column.
-4. The Notes column is not included in the dataframe.
-5. The term column is an integer.
+### App architecture
+The 🆕Recon.py file is the entry point for creating a new reconciliation. After the user defines some basic information about the recon, the app sets up a new reconciliation. It does the following: 
+1. It duplicates the `recon_wizard_template.py` into the Pages folder and names it according to the user's input.
+2. It creates a new entry in the `recon_metadata.csv` file which stores information about the reconciliation that is used by the reconciliation dashboard.
 
-### Why is this app useful?
-This app could be used in the first step of a data engineering pipeline. It allows you, the data engineer, to help data analysts ensure their data conforms to a specific schema before they continue their analysis. 
+After the user follows the prompts of the recon wizard to set up a new recon, the result of the recon is saved in the `outputs` folder. These outputs are used by the reconciliation dashboard. 
 
-In this app, only if the user has fixed all of the issues in their data, will they be able to export the data to a csv file. You could update this app to export the data to a database instead.
-
-### Mito Streamlit Package 
-TODO: Link to docs
+The app relies on the [Streamlit framework](https://streamlit.io) and the [Mito Streamlit Spreadsheet](https://docs.trymito.io/mito-for-streamlit/getting-started).
 
 ### Run Locally 
 1. Create a virtual environment:
@@ -35,5 +41,12 @@ pip install -r requirements.txt
 
 4. Start the streamlit app
 ```
-streamlit run main.py
+streamlit run app.py
 ```
+
+### Developer Utilities
+If you make changes to the app's architecture and/or want to clear all previous recons, use the `reset_app.sh` bash script to reset the app. Use it by running:
+```
+bash dev/reset_app.sh
+```
+ 
