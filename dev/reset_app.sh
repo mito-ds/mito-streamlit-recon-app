@@ -1,5 +1,7 @@
 #!/bin/bash -eu
 
+echo "Resetting app"
+
 # Clear the outputs director
 rm -rf outputs/
 mkdir outputs
@@ -17,6 +19,8 @@ rm -rf Pages/*
 # Move the preserved file back to the original directory
 mv /tmp/🆕Recon.py Pages/
 rm -rf tmp
+
+echo "Finished resetting app"
 
 
 

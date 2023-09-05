@@ -13,5 +13,3 @@ with st.form(key='create_new_recon_form'):
 
 if submitted:
     st.success(f'Created a new recon wizard. Click on the new tab {recon_report_name} to configure it.')
-
-

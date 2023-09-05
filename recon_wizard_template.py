@@ -56,15 +56,15 @@ else:
             return "Import the **second** data source by clicking **Import** in the Mito toolbar and selecting an import method."
 
         if num_dfs == 2:
-            return """Merge the two datasets together by clicking **Dataframes** > **Merge**. 
-                Then select the columns from each dataframe that you want to merge on.
-            """
+            return """Merge the two datasets together by clicking **Dataframes** > **Merge**. Then select the columns from each dataframe that you want to merge on."""
         if num_dfs == 3:
-            return "Now that you've constructed the dataset, scroll down to configure the recon."
+            return """Now that you've constructed the dataset, setup data checks by adding a new column and using the formulas =CHECK_NUMBER_DIFFERENCE() and =CHECK_STRING_DIFFERENCE().
+            **Make sure to include the word "check" in the column name so that recon app registers it as a report**."""
 
     # Create a placeholder streamlit widget so we can later fill in the 
     # wizard instructions and display it to the user above the spreadsheet.
     instruction_prompt = st.empty()
+    formula_documation = st.empty()
 
     # Display the data inside of the spreadsheet so the user can easily fix data quality issues.
     dfs, _ = spreadsheet(importers=[get_sales_data], import_folder='./data', sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE])
@@ -72,59 +72,48 @@ else:
     num_dfs = len(dfs)
     instruction_prompt.success(get_instruction_prompt(num_dfs))
 
-    if len(dfs) < 3:
-        st.stop()
+    if len(dfs) == 3:
+        with formula_documation.expander("Formula Documentation"):
+            st.markdown("""
+                ### CHECK_NUMBER_DIFFERENCE 
+                
+                CHECK_NUMBER_DIFFERENCE(number_column_one, number_column_two, tolerance)
+                Syntax:
+                - number_column_one: The first column to compare
+                - number_column_two: The second column to compare
+                - tolerance: The amount of difference allowed between the two columns.
 
-    dataframes = list(dfs.values())
-    merged_df = dataframes[2]
-    merged_df = clean_merged_dataframe(merged_df)
+                Returns:
+                - Match if the two columns are exactly equal
+                - Immaterial if the two columns are within the tolerance
+                - The difference if the two columns are not within the tolerance
 
-    st.success("""Setup data checks by adding a new column and using the formulas =CHECK_NUMBER_DIFFERENCE() and =CHECK_STRING_DIFFERENCE().
-    
-    **Make sure to include the word "check" in the column name so that recon app registers it as a report**.
-    """)
+                Ex: 
+                - =CHECK_NUMBER_DIFFERENCE(price_excel, price_database, 0.5)
+                
+                ### CHECK_STRING_DIFFERENCE 
+                
+                CHECK_STRING_DIFFERENCE(string_column_one, string_column_two, similarity_threshold)
+                Syntax:
+                - string_column_one: The first column to compare
+                - string_column_two: The second column to compare
+                - similarity_threshold: The minimum required similarity between the two strings. Two identical strings have a similarity of 100.
 
-    with st.expander("Formula Documentation"):
-        st.markdown("""
-            ### CHECK_NUMBER_DIFFERENCE 
-            
-            CHECK_NUMBER_DIFFERENCE(number_column_one, number_column_two, tolerance)
-            Syntax:
-            - number_column_one: The first column to compare
-            - number_column_two: The second column to compare
-            - tolerance: The amount of difference allowed between the two columns.
+                Returns:
+                - Match if the two columns are exactly equal
+                - Immaterial if the two columns are within the tolerance
+                - The similarity ratio if the two columns are not above the similarity threshold
 
-            Returns:
-            - Match if the two columns are exactly equal
-            - Immaterial if the two columns are within the tolerance
-            - The difference if the two columns are not within the tolerance
+                Ex: 
+                - =CHECK_STRING_DIFFERENCE(salesperson_excel, salesperson_database, 90)
+            """
+        )
 
-            Ex: 
-            - =CHECK_NUMBER_DIFFERENCE(price_excel, price_database, 0.5)
-            
-            ### CHECK_STRING_DIFFERENCE 
-            
-            CHECK_STRING_DIFFERENCE(string_column_one, string_column_two, similarity_threshold)
-            Syntax:
-            - string_column_one: The first column to compare
-            - string_column_two: The second column to compare
-            - similarity_threshold: The minimum required similarity between the two strings. Two identical strings have a similarity of 100.
-
-            Returns:
-            - Match if the two columns are exactly equal
-            - Immaterial if the two columns are within the tolerance
-            - The similarity ratio if the two columns are not above the similarity threshold
-
-            Ex: 
-            - =CHECK_STRING_DIFFERENCE(salesperson_excel, salesperson_database, 90)
-        """
-    )
-            
-    dfs, _ = spreadsheet(merged_df, sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE])
-    recon_raw_data_df = list(dfs.values())[0]
-
+    dfs = list(dfs.values())
+    recon_raw_data_df = dfs[2] if len(dfs) >= 3 else None
+        
     # When the user presses the button, call the function to download the data.
-    if st.button("Generate Recon Report"):
+    if st.button("Generate Recon Report", disabled=recon_raw_data_df is None):
         # Save the recon metadata to the metadata file so we can display info about it in the app dashboard
         add_recon_to_metadata(RECON_NAME, RECON_DESCRIPTION, RECON_VALUE)
 
