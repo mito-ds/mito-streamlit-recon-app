@@ -1,0 +1,7 @@
+Date,Check,Outcome,Count
+2023-09-01 15:11:39.913973,Car Model Check,Match,838932
+2023-09-01 15:11:39.913973,Car Model Check,Immaterial,0
+2023-09-01 15:11:39.913973,Car Model Check,Failing,209643
+2023-09-01 15:11:39.913973,Commission Check,Match,10295
+2023-09-01 15:11:39.913973,Commission Check,Immaterial,203456
+2023-09-01 15:11:39.913973,Commission Check,Failing,834820
