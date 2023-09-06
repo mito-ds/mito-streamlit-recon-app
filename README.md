@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 4. Start the streamlit app
 ```
-streamlit run app.py
+streamlit run Dashboard.py
 ```
 
 ### Developer Utilities
