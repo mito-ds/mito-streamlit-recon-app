@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import os
+from mitosheet.streamlit.v1 import spreadsheet
 
 from utils import get_most_recent_outputs_paths, METADATE_FILE_PATH
 from custom_spreadsheet_functions import MATCH, IMMATERIAL, FAIL
@@ -81,6 +82,8 @@ metric_three.metric("Number of FAILING checks", num_failing_checks)
 st.divider()
 
 total_summary_df = pd.DataFrame({'Outcome': [MATCH, IMMATERIAL, FAIL], 'Count': [num_matching_checks, num_immaterial_checks, num_failing_checks]})
+
+spreadsheet(total_summary_df)
 
 fig = go.Figure()
 

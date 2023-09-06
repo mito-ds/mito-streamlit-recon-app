@@ -6,6 +6,10 @@ echo "Resetting app"
 rm -rf outputs/
 mkdir outputs
 
+# Clear the recon-scripts directory
+rm -rf recon-scripts/
+mkdir recon-scripts
+
 # Remove the metadata file
 rm -rf recon_metadata.csv
 

@@ -5,22 +5,28 @@ import plotly.express as px
 from datetime import datetime
 from custom_imports import get_sales_data
 from custom_spreadsheet_functions import CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE
-from utils import clean_merged_dataframe, get_recon_report, get_most_recent_output_path_by_name, get_recon_summary_graph, add_recon_to_metadata
+from utils import * 
 
 RECON_NAME = "MITO_PLACEHOLDER__REPLACE_WITH_RECON_NAME"
 RECON_DESCRIPTION = "MITO_PLACEHOLDER__REPLACE_WITH_RECON_DESCRIPTION"
 RECON_VALUE = "MITO_PLACEHOLDER__REPLACE_WITH_RECON_VALUE"
+UPDATE_RECON_KEY = f"update_{RECON_NAME}"
 
 st.set_page_config(layout="wide")
 st.title(RECON_NAME)
 
+if UPDATE_RECON_KEY not in st.session_state:
+    st.session_state[UPDATE_RECON_KEY] = False
+
 # Get the previous run of the report if it exists
 previous_recon_report_path = get_most_recent_output_path_by_name(RECON_NAME)
 
-if previous_recon_report_path:
-    # If we've already ran this report, display the summary of the most recent run.
+if RECON_NAME not in st.session_state:
+    st.session_state[RECON_NAME] = False
 
-    previous_recon_report_summary_df = pd.read_csv(previous_recon_report_path)
+if previous_recon_report_path or st.session_state[UPDATE_RECON_KEY]:
+    # If we've already ran this report, display the summary of the most recent run.
+    recon_report_summary_df = pd.read_csv(previous_recon_report_path)
 
     # Get the csv name from the report path
     previous_recon_report_name = previous_recon_report_path.split('/')[-1]
@@ -28,14 +34,50 @@ if previous_recon_report_path:
     # Format the name as a date
     previous_recon_report_date = datetime.strptime(previous_recon_report_name, "%Y-%m-%d-%H-%M-%S.csv")
 
-    st.info(f"""Recon Description: {RECON_DESCRIPTION} 
+    st.info(f'''
+        Recon Description: {RECON_DESCRIPTION} 
 
-    Automating this recon saves {RECON_VALUE} hours per quarter."""
+        Hours per quarter saved with automation: {RECON_VALUE}'''
     )
+
+    if st.button("Rerun recon with new datsets"):
+        st.session_state[UPDATE_RECON_KEY] = True
+
+    if st.session_state[UPDATE_RECON_KEY]:
+        recon_function_string = get_recon_script(RECON_NAME)
+
+        recon_function_string, original_imported_df_names = remove_import_code_and_get_df_names(recon_function_string)
+
+        new_df_names_and_dfs, new_imports_string = spreadsheet(import_folder='./data', key='update_recon')
+        new_df_names = list(new_df_names_and_dfs.keys())
+
+        if st.button("Rerun Recon"):     
+
+            # Remove the package imports since we've already imported them in the recon_function
+            new_imports_string = remove_package_imports(new_imports_string)
+
+            # Rename the imports to the original names
+            rename_imports_strings = []
+            original_and_new_df_names = {df_name: df for df_name, df in zip(original_imported_df_names, new_df_names)}
+            for original_imported_df_names, new_df in original_and_new_df_names.items():
+                rename_imports_strings.append(f'{original_imported_df_names} = {new_df}')
+
+            rename_imports_string = '\n'.join(rename_imports_strings)
+
+            recon_function_string = finalize_code_string(recon_function_string, new_imports_string, rename_imports_string)
+
+
+            recon_function = get_new_function(recon_function_string)
+            recon_function_dfs = recon_function()
+
+            # Get the last dataframe from the recon_function_dfs
+            recon_result_df = recon_function_dfs[-1]
+
+            check_summary_df = get_recon_report(recon_result_df)[0]
 
     st.markdown(f"""This recon was last run on {previous_recon_report_date}""")
 
-    dfs, _ = spreadsheet(previous_recon_report_summary_df)
+    dfs, _ = spreadsheet(recon_report_summary_df)
     dfs_list = list(dfs.values())
     check_summary_df = dfs_list[0]
 
@@ -57,9 +99,13 @@ else:
 
         if num_dfs == 2:
             return """Merge the two datasets together by clicking **Dataframes** > **Merge**. Then select the columns from each dataframe that you want to merge on."""
+        
         if num_dfs == 3:
-            return """Now that you've constructed the dataset, setup data checks by adding a new column and using the formulas =CHECK_NUMBER_DIFFERENCE() and =CHECK_STRING_DIFFERENCE().
-            **Make sure to include the word "check" in the column name so that recon app registers it as a report**."""
+            return """
+            Now that you've constructed the dataset, setup data checks by adding a new column and using the formulas =CHECK_NUMBER_DIFFERENCE() and =CHECK_STRING_DIFFERENCE().
+            
+            **Make sure to include the word "check" in the column name so that recon app registers it as a report**.
+            """
 
     # Create a placeholder streamlit widget so we can later fill in the 
     # wizard instructions and display it to the user above the spreadsheet.
@@ -67,7 +113,13 @@ else:
     formula_documation = st.empty()
 
     # Display the data inside of the spreadsheet so the user can easily fix data quality issues.
-    dfs, _ = spreadsheet(importers=[get_sales_data], import_folder='./data', sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE])
+    dfs, code = spreadsheet(
+        importers=[get_sales_data], 
+        import_folder='./data', 
+        sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE],
+        code_options={'as_function': True, 'call_function': False, 'function_name': f'MITO_GENERATED_RECON_FUNCTION_{RECON_NAME}', 'function_params': {}},
+        key='setup_recon'
+    )
 
     num_dfs = len(dfs)
     instruction_prompt.success(get_instruction_prompt(num_dfs))
@@ -112,23 +164,20 @@ else:
     dfs = list(dfs.values())
     recon_raw_data_df = dfs[2] if len(dfs) >= 3 else None
         
-    # When the user presses the button, call the function to download the data.
     if st.button("Generate Recon Report", disabled=recon_raw_data_df is None):
         # Save the recon metadata to the metadata file so we can display info about it in the app dashboard
         add_recon_to_metadata(RECON_NAME, RECON_DESCRIPTION, RECON_VALUE)
+        save_recon_script(RECON_NAME, code)
 
         dfs = get_recon_report(recon_raw_data_df)
 
         spreadsheet(*dfs)
 
-        check_summary_df = dfs[0]
-
-        # Save the csv as the current date and time in the outputs/RECON_NAME folder
-        now = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-        check_summary_df.to_csv(f'./outputs/{RECON_NAME}/{now}.csv', index=False)
+        recon_summary_df = dfs[0]
+        save_recon_report(recon_summary_df, RECON_NAME)
 
         # Create graph and display it
-        fig = get_recon_summary_graph(check_summary_df)
+        fig = get_recon_summary_graph(recon_summary_df)
         st.plotly_chart(fig, use_container_width=True)
 
 """
