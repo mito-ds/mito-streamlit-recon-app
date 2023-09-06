@@ -21,23 +21,23 @@ if UPDATE_RECON_KEY not in st.session_state:
 # Get the previous run of the report if it exists
 previous_recon_report_path = get_most_recent_output_path_by_name(RECON_NAME)
 
-if RECON_NAME not in st.session_state:
-    st.session_state[RECON_NAME] = False
-
-if previous_recon_report_path or st.session_state[UPDATE_RECON_KEY]:
+if previous_recon_report_path:
     # If we've already ran this report, display the summary of the most recent run.
-    recon_report_summary_df = pd.read_csv(previous_recon_report_path)
+    recon_summary_df = pd.read_csv(previous_recon_report_path)
 
     # Get the csv name from the report path
-    previous_recon_report_name = previous_recon_report_path.split('/')[-1]
+    previous_recon_name = previous_recon_report_path.split('/')[-1]
 
     # Format the name as a date
-    previous_recon_report_date = datetime.strptime(previous_recon_report_name, "%Y-%m-%d-%H-%M-%S.csv")
+    previous_recon_report_date = datetime.strptime(previous_recon_name, "%Y-%m-%d-%H-%M-%S.csv")
 
     st.info(f'''
         Recon Description: {RECON_DESCRIPTION} 
 
-        Hours per quarter saved with automation: {RECON_VALUE}'''
+        Hours saved per quarter with automation: {RECON_VALUE}
+        
+        Last updated: {previous_recon_report_date}
+        '''
     )
 
     if st.button("Rerun recon with new datsets"):
@@ -48,10 +48,20 @@ if previous_recon_report_path or st.session_state[UPDATE_RECON_KEY]:
 
         recon_function_string, original_imported_df_names = remove_import_code_and_get_df_names(recon_function_string)
 
+        new_import_prompt = st.empty()
+
         new_df_names_and_dfs, new_imports_string = spreadsheet(import_folder='./data', key='update_recon')
         new_df_names = list(new_df_names_and_dfs.keys())
 
-        if st.button("Rerun Recon"):     
+        def get_new_import_prompt(new_df_names: list, original_imported_df_names: list) -> str:
+            if len(new_df_names) == len(original_imported_df_names):
+                return "Click the **Rerun Recon** button below."
+            else:
+                return f"Import a file to replace **{original_imported_df_names[len(new_df_names)-1]}** dataframe."
+
+        new_import_prompt.success(get_new_import_prompt(new_df_names, original_imported_df_names))
+
+        if st.button("Rerun Recon", key='rerun_recon', disabled=len(new_df_names) != len(original_imported_df_names)):     
 
             # Remove the package imports since we've already imported them in the recon_function
             new_imports_string = remove_package_imports(new_imports_string)
@@ -66,23 +76,33 @@ if previous_recon_report_path or st.session_state[UPDATE_RECON_KEY]:
 
             recon_function_string = finalize_code_string(recon_function_string, new_imports_string, rename_imports_string)
 
-
+            st.code(recon_function_string)
             recon_function = get_new_function(recon_function_string)
             recon_function_dfs = recon_function()
 
             # Get the last dataframe from the recon_function_dfs
             recon_result_df = recon_function_dfs[-1]
 
-            check_summary_df = get_recon_report(recon_result_df)[0]
+            recon_summary_df = get_recon_report(recon_result_df)[0]
+            save_recon_report(recon_summary_df, RECON_NAME)
 
-    st.markdown(f"""This recon was last run on {previous_recon_report_date}""")
+            st.markdown('# Recon Result')
+            # Display the new recon report
+            spreadsheet(recon_summary_df)
 
-    dfs, _ = spreadsheet(recon_report_summary_df)
+            # Create graph and display it
+            fig = get_recon_summary_graph(recon_summary_df)
+            st.plotly_chart(fig, use_container_width=True)
+
+        st.stop()
+
+    st.markdown('# Previous Recon Result')
+    dfs, _ = spreadsheet(recon_summary_df)
     dfs_list = list(dfs.values())
-    check_summary_df = dfs_list[0]
+    recon_summary_df = dfs_list[0]
 
     # Create graph and display it
-    fig = get_recon_summary_graph(check_summary_df)
+    fig = get_recon_summary_graph(recon_summary_df)
     st.plotly_chart(fig, use_container_width=True)
 
 else:
@@ -171,6 +191,8 @@ else:
 
         dfs = get_recon_report(recon_raw_data_df)
 
+        st.markdown("# Recon Result")
+
         spreadsheet(*dfs)
 
         recon_summary_df = dfs[0]
@@ -180,18 +202,5 @@ else:
         fig = get_recon_summary_graph(recon_summary_df)
         st.plotly_chart(fig, use_container_width=True)
 
-"""
-TODO: When the user reopens an already created recon, we want to save the recon and let them add new data to it. But we don't want them to go through the 
-entire setup process again. 
-
-- [DONE] When the user reopens the recon, we want to show them the plotly chat and summary report from the last time they ran the recon.
-
-- If they want to update the recon with new data, we should get the code from each mitosheet as a function. 
-    1. Takes the input data sources and merges them together 
-    2. Takes the mergeed data and runs the checks
-
-- Take the result and generate the summary report and the plotly chart
-
-"""
 
 

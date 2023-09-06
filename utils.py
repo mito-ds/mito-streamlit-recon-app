@@ -147,8 +147,6 @@ def get_new_function(function_string: str):
     functions = [f for f in locals().values() if callable(f) and f not in functions_before]
 
     for f in functions:
-        print(f.__name__)
-        
         # Return the Mito generated recon function so that we don't get tripped up 
         # by other functions that are imported, ie: custom sheet functions
         if "MITO_GENERATED_RECON_FUNCTION_" in f.__name__:
