@@ -68,7 +68,7 @@ st.divider()
 metric_one, metric_two, metric_three = st.columns((1,1,1))
 metric_one.metric("Number of Rules Applied", get_total_number_of_rules_applied(*most_recent_output_dfs))
 metric_two.metric("Number of Records Checked", get_total_number_of_records_checked(*most_recent_output_dfs))
-metric_three.metric("Number of Hours Saved", get_total_number_of_hours_saved())
+metric_three.metric("Number of Hours Saved per Quarter", get_total_number_of_hours_saved())
 
 num_matching_checks =  get_total_number_of_checks_for_outcome(*most_recent_output_dfs, outcome=MATCH)
 num_immaterial_checks = get_total_number_of_checks_for_outcome(*most_recent_output_dfs, outcome=IMMATERIAL)

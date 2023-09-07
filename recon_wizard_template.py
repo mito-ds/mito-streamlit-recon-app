@@ -11,12 +11,19 @@ RECON_NAME = "MITO_PLACEHOLDER__REPLACE_WITH_RECON_NAME"
 RECON_DESCRIPTION = "MITO_PLACEHOLDER__REPLACE_WITH_RECON_DESCRIPTION"
 RECON_VALUE = "MITO_PLACEHOLDER__REPLACE_WITH_RECON_VALUE"
 UPDATE_RECON_KEY = f"update_{RECON_NAME}"
+RECON_CONFIGURATION_STEP_KEY = f"recon_configuration_step_{RECON_NAME}"
 
 st.set_page_config(layout="wide")
 st.title(RECON_NAME)
 
 if UPDATE_RECON_KEY not in st.session_state:
     st.session_state[UPDATE_RECON_KEY] = False
+
+if RECON_CONFIGURATION_STEP_KEY not in st.session_state:
+    st.session_state[RECON_CONFIGURATION_STEP_KEY] = 1
+
+def update_recon_configuration_step_state():
+    st.session_state[RECON_CONFIGURATION_STEP_KEY] += 1
 
 # Get the previous run of the report if it exists
 previous_recon_report_path = get_most_recent_output_path_by_name(RECON_NAME)
@@ -110,28 +117,37 @@ else:
 
     st.markdown("""This is the recon setup wizard. It will guide you through a series of steps to set up your recon report.""")
 
-    def get_instruction_prompt(num_dfs: int) -> str:
-        if num_dfs == 0:
-            return "Import the **first** data source by clicking **Import** in the Mito toolbar and selecting an import method."
+    def get_instruction_prompt(recon_configuration_step: int) -> str:
+        if recon_configuration_step == 1 or recon_configuration_step == 2:
+            return f'''
+                ### Step {recon_configuration_step}: Construct {'first' if recon_configuration_step == 1 else 'second'} dataset
+                Construct the **{'first' if recon_configuration_step == 1 else 'second'}** data source to reconcile. 
 
-        if num_dfs == 1:
-            return "Import the **second** data source by clicking **Import** in the Mito toolbar and selecting an import method."
+                1. Import data by clicking **Import** in the Mito toolbar.
+                2. Preprocess the data into the correct format using Mito's transformations. 
+            '''
 
-        if num_dfs == 2:
-            return """Merge the two datasets together by clicking **Dataframes** > **Merge**. Then select the columns from each dataframe that you want to merge on."""
-        
-        if num_dfs == 3:
+        if recon_configuration_step == 3:
             return """
+            ### Step 3: Merge datasets together
+            Merge the datasets together by clicking **Dataframes** > **Merge**. Then select the columns from each dataframe that you want to merge on."""
+        
+        if recon_configuration_step == 4:
+            return """
+            ### Step 4: Construct Recon
             Now that you've constructed the dataset, setup data checks by adding a new column and using the formulas =CHECK_NUMBER_DIFFERENCE() and =CHECK_STRING_DIFFERENCE().
             
             **Make sure to include the word "check" in the column name so that recon app registers it as a report**.
             """
+        
+        if recon_configuration_step > 5:
+            return "Scroll down to view the recon report."
 
     # Create a placeholder streamlit widget so we can later fill in the 
     # wizard instructions and display it to the user above the spreadsheet.
-    instruction_prompt = st.empty()
-    formula_documation = st.empty()
-
+    instruction_prompt = st.success(get_instruction_prompt(st.session_state[RECON_CONFIGURATION_STEP_KEY]))
+    st.button("Next Step" if st.session_state[RECON_CONFIGURATION_STEP_KEY] < 4 else "Generate Report", on_click=update_recon_configuration_step_state)
+    
     # Display the data inside of the spreadsheet so the user can easily fix data quality issues.
     dfs, code = spreadsheet(
         importers=[get_sales_data], 
@@ -141,50 +157,10 @@ else:
         key='setup_recon'
     )
 
-    num_dfs = len(dfs)
-    instruction_prompt.success(get_instruction_prompt(num_dfs))
-
-    if len(dfs) == 3:
-        with formula_documation.expander("Formula Documentation"):
-            st.markdown("""
-                ### CHECK_NUMBER_DIFFERENCE 
-                
-                CHECK_NUMBER_DIFFERENCE(number_column_one, number_column_two, tolerance)
-                Syntax:
-                - number_column_one: The first column to compare
-                - number_column_two: The second column to compare
-                - tolerance: The amount of difference allowed between the two columns.
-
-                Returns:
-                - Match if the two columns are exactly equal
-                - Immaterial if the two columns are within the tolerance
-                - The difference if the two columns are not within the tolerance
-
-                Ex: 
-                - =CHECK_NUMBER_DIFFERENCE(price_excel, price_database, 0.5)
-                
-                ### CHECK_STRING_DIFFERENCE 
-                
-                CHECK_STRING_DIFFERENCE(string_column_one, string_column_two, similarity_threshold)
-                Syntax:
-                - string_column_one: The first column to compare
-                - string_column_two: The second column to compare
-                - similarity_threshold: The minimum required similarity between the two strings. Two identical strings have a similarity of 100.
-
-                Returns:
-                - Match if the two columns are exactly equal
-                - Immaterial if the two columns are within the tolerance
-                - The similarity ratio if the two columns are not above the similarity threshold
-
-                Ex: 
-                - =CHECK_STRING_DIFFERENCE(salesperson_excel, salesperson_database, 90)
-            """
-        )
-
     dfs = list(dfs.values())
-    recon_raw_data_df = dfs[2] if len(dfs) >= 3 else None
+    recon_raw_data_df = dfs[-1] if len(dfs) > 0 else None
         
-    if st.button("Generate Recon Report", disabled=recon_raw_data_df is None):
+    if st.session_state[RECON_CONFIGURATION_STEP_KEY] > 4:
         # Save the recon metadata to the metadata file so we can display info about it in the app dashboard
         add_recon_to_metadata(RECON_NAME, RECON_DESCRIPTION, RECON_VALUE)
         save_recon_script(RECON_NAME, code)
@@ -201,6 +177,7 @@ else:
         # Create graph and display it
         fig = get_recon_summary_graph(recon_summary_df)
         st.plotly_chart(fig, use_container_width=True)
+        
 
 
 
