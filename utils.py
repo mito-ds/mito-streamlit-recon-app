@@ -20,7 +20,7 @@ def get_recon_report(recon_df: pd.DataFrame) -> List[pd.DataFrame]:
     """
     Given a recon dataframe, returns a list of dataframes with the following structure:
     1. A summary dataframe that shows the number of records that matched, were immaterial, or failed for each check
-    2. For each (check, outcome)  a separate dataframe that only shows records for that (check, outcome)
+    2. For each (check, outcome) a separate dataframe that only shows records for that (check, outcome)
     """
     recon_summary_df = pd.DataFrame(columns=['Date', 'Check', 'Outcome', 'Count'])
 
@@ -49,6 +49,11 @@ def get_recon_report(recon_df: pd.DataFrame) -> List[pd.DataFrame]:
             matching_checks_df = recon_df[recon_df[column_header] == MATCH]
             immaterial_checks_df = recon_df[recon_df[column_header] == IMMATERIAL]
             failing_checks_df = recon_df[(recon_df[column_header] != MATCH ) & (recon_df[column_header] != IMMATERIAL)]
+
+            # Add an check column to each dataframe at the front of the dataframe
+            matching_checks_df.insert(0, 'Check Outcome', f'{column_header} - {MATCH}')
+            immaterial_checks_df.insert(0, 'Check Outcome', f'{column_header} - {IMMATERIAL}')
+            failing_checks_df.insert(0, 'Check Outcome', f'{column_header} - Failing')
 
             outcome_dfs.extend([matching_checks_df, immaterial_checks_df, failing_checks_df])
 
@@ -193,7 +198,9 @@ def finalize_code_string(function_string, new_imports_string, rename_imports_str
         new_lines.append(line)
         if "def " in line:
             # Add a tab before each line in new_imports_string and rename_imports_string
-            new_lines.append('    from custom_imports import get_sales_data')
+            new_lines.append('    from mitosheet.public.v3 import SUBSTITUTE')
+            new_lines.append('    import pandas as pd')
+            new_lines.append('    from custom_imports import get_sales_data, get_european_estate_data')
             new_lines.append('    from custom_spreadsheet_functions import CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE')
 
             new_imports_string = '\n'.join(['    ' + l for l in new_imports_string.split('\n')])

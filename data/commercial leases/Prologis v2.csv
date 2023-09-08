@@ -1,0 +1,745 @@
+﻿Stategy,Portfolio,Lease ID,Asset ID,Country,Tenant Name,Estimated Rental Value,Net Effective Rent,Square Meters,Space utilization,Peak space utilization
+Warehouse,Prologis,L73434,W10496,France,Luminous Events Planning,68404673,72508953,74684,100%,100%
+Warehouse,Prologis,L72913,W10243,UK,Alpine Adventures,91082662,82885222,83714,86%,100%
+Warehouse,Prologis,L84181,W10762,Spain,Elemental Eats Catering,88722861,86948404,93904,85%,100%
+Warehouse,Prologis,L87538,W10245,Germany,Firefly Technologies,19878524,18884598,20018,75%,100%
+Warehouse,Prologis,L86685,W10793,France,GreenEarth Sustainable Living,92981333,94840960,94841,94%,100%
+Warehouse,Prologis,L56448,W10469,France,TerraVista Landscaping,96668409,87968252,94126,81%,100%
+Warehouse,Prologis,L25585,W10206,Netherlands,Firefly Technologies,92736916,92736916,95519,50%,68%
+Warehouse,Prologis,L66579,W10839,Germany,EchoStar Communications,85238802,84386414,81855,51%,100%
+Warehouse,Prologis,L70646,W10487,France,Tranquil Waters Spa,38283477,40963320,40144,100%,100%
+Warehouse,Prologis,L72081,W10986,Russia,GlobalGreen Energy,94335076,89618322,81553,75%,100%
+Warehouse,Prologis,L62738,W11000,France,Unity Web Solutions,14221800,14648454,15674,60%,69%
+Warehouse,Prologis,L29244,W10380,Germany,Radiant Cosmetics,51487718,46338946,41705,72%,100%
+Warehouse,Prologis,L56843,W10512,Netherlands,Everest Expeditions,24134650,25824076,24016,100%,100%
+Warehouse,Prologis,L32170,W10870,Spain,Phoenix Fitness Center,40536191,40941553,37257,92%,100%
+Warehouse,Prologis,L89339,W10350,Netherlands,Quantum Innovations,82142219,87892174,94045,93%,100%
+Warehouse,Prologis,L68582,W10105,Spain,Proxima Builders,69595664,75859274,81169,84%,100%
+Warehouse,Prologis,L81726,W10332,Netherlands,Everest Expeditions,9883637,10180146,10995,73%,92%
+Warehouse,Prologis,L24677,W10643,Italy,Golden Gate Catering,46196345,48968126,46030,83%,100%
+Warehouse,Prologis,L34597,W10191,Germany,Pacific Pearl Investments,63298584,64564556,71021,78%,100%
+Warehouse,Prologis,L40083,W10381,Portugal,Urban Fusion Architects,4069400,4110094,4439,96%,97%
+Warehouse,Prologis,L20946,W10976,Italy,Elemental Artistry,37442978,35570829,39128,57%,58%
+Warehouse,Prologis,L32941,W10167,Russia,AquaSplash Water Park,72714658,66170339,64185,84%,100%
+Warehouse,Prologis,L62864,W10084,Portugal,BrightWave Marketing,44510796,42285256,45245,54%,100%
+Warehouse,Prologis,L10402,W10161,Netherlands,Pinnacle Painters,53818909,55971665,57091,100%,100%
+Warehouse,Prologis,L60570,W10591,Spain,Zenith Marketing Group,60916874,64571886,62635,73%,100%
+Warehouse,Prologis,L43645,W10965,Germany,Firefly Technologies,35468421,38660579,35181,100%,100%
+Warehouse,Prologis,L23543,W10176,Russia,GlobalGreen Energy,63506263,64141326,66707,88%,100%
+Warehouse,Prologis,L57173,W10186,Spain,Horizon Law Firm,26485422,28074547,30040,89%,100%
+Warehouse,Prologis,L40214,W10615,Portugal,Crimson Catering,85069690,89323175,87537,77%,95%
+Warehouse,Prologis,L13048,W10557,Netherlands,Everest Expeditions,79578265,77986700,85785,61%,100%
+Warehouse,Prologis,L76874,W10668,Germany,Thunderbird Aerospace,20867876,18781088,18781,74%,100%
+Warehouse,Prologis,L89458,W10134,Netherlands,Cascade Construction,98413997,98413997,90541,95%,100%
+Warehouse,Prologis,L58899,W10554,Russia,Oceanic Oil & Gas,5988628,6108401,5681,60%,100%
+Warehouse,Prologis,L62016,W10799,Sweden,Serenity Salon & Spa,25284251,22755826,20708,80%,100%
+Warehouse,Prologis,L89814,W10079,Sweden,Serenity Salon & Spa,74553202,73807670,71593,83%,100%
+Warehouse,Prologis,L21403,W10945,UK,Quantum Quill Publishing,83289686,81623892,79991,77%,90%
+Warehouse,Prologis,L45197,W10075,Portugal,Crimson Catering,84267159,77525786,80627,76%,90%
+Warehouse,Prologis,L40660,W10303,Spain,Zenith Capital Management,10607378,9652714,9749,52%,94%
+Warehouse,Prologis,L65725,W10866,Germany,Radiant Realty,71488432,67914010,71989,62%,100%
+Warehouse,Prologis,L28391,W10127,France,Tranquil Waters Spa,66245830,68233205,74374,78%,100%
+Warehouse,Prologis,L39229,W10060,Spain,Phoenix Fitness Center,46736822,45334717,46695,66%,76%
+Warehouse,Prologis,L49959,W10621,UK,StellarTech Solutions,91496974,86922125,93876,93%,95%
+Warehouse,Prologis,L41988,W10556,Sweden,Elemental Designs,16274667,17088400,16405,96%,100%
+Warehouse,Prologis,L64963,W10895,Italy,Zenith Pharmaceuticals,17957424,16161682,16647,77%,100%
+Warehouse,Prologis,L48737,W10394,Sweden,Pinnacle Productions,68453538,69138073,66373,77%,78%
+Warehouse,Prologis,L10450,W10255,Portugal,Crimson Catering,42628082,40070397,37666,72%,78%
+Warehouse,Prologis,L49589,W10288,UK,Alpine Cafe & Bistro,48554038,49525119,46058,56%,100%
+Warehouse,Prologis,L33563,W10161,Netherlands,Pinnacle Painters,84796138,87340022,83846,82%,100%
+Warehouse,Prologis,L14753,W10879,Spain,Galaxy Graphics,48250330,48732833,46296,87%,100%
+Warehouse,Prologis,L23319,W10827,Netherlands,Everest Expeditions,20396183,20804107,19556,69%,72%
+Warehouse,Prologis,L89513,W10648,UK,Alpine Cafe & Bistro,1617696,1552988,1429,79%,97%
+Warehouse,Prologis,L88732,W10261,UK,StellarTech Solutions,71733492,76754836,76755,67%,100%
+Warehouse,Prologis,L78864,W10028,France,Elysian Fashion House,84933592,93426951,99967,100%,100%
+Warehouse,Prologis,L64807,W10694,France,Crimson Creative Agency,63604779,62968731,69266,97%,100%
+Warehouse,Prologis,L40983,W10823,Italy,Golden Gate Catering,4318157,4749973,5225,100%,100%
+Warehouse,Prologis,L62108,W10135,UK,Quantum Quill Publishing,8606815,9381428,9569,75%,100%
+Warehouse,Prologis,L73763,W10053,Netherlands,Celestial Travel Agency,51312577,49260074,51723,96%,100%
+Warehouse,Prologis,L48624,W10179,Netherlands,Sunbeam Technologies,46969344,46029957,50633,78%,80%
+Warehouse,Prologis,L81047,W10664,Sweden,Pinnacle Productions,90939039,88210868,97032,59%,100%
+Warehouse,Prologis,L62312,W10730,France,Unity Web Solutions,76996217,75456293,67911,98%,100%
+Warehouse,Prologis,L67982,W10462,Portugal,Orion Analytics,83088301,91397131,89569,58%,100%
+Warehouse,Prologis,L49317,W10492,Spain,Elemental Eats Catering,82212955,88789991,87902,100%,100%
+Warehouse,Prologis,L39864,W10416,Germany,Radiant Realty,49774478,50272223,47256,69%,100%
+Warehouse,Prologis,L57793,W10155,Germany,Firefly Technologies,27199828,28015823,28576,80%,100%
+Warehouse,Prologis,L83192,W10221,Russia,Envision Architects,60395534,62207400,63452,98%,100%
+Warehouse,Prologis,L51205,W10402,Spain,Elemental Eats Catering,40346705,41153639,41565,60%,100%
+Warehouse,Prologis,L41178,W10520,Sweden,Zenith Zen Spa,210865,210865,202,99%,100%
+Warehouse,Prologis,L42873,W10531,UK,StellarTech Solutions,2766011,2793671,2626,64%,95%
+Warehouse,Prologis,L29157,W10939,Portugal,Starlight Financial Services,61965396,58247472,64072,72%,100%
+Warehouse,Prologis,L66379,W10372,Portugal,Orion Analytics,88646338,95738045,93823,76%,100%
+Warehouse,Prologis,L70498,W10227,Germany,Galactic Gaming Studios,64250472,61037948,65311,65%,100%
+Warehouse,Prologis,L14649,W10588,Portugal,OceanView Real Estate,52388563,47673592,48627,82%,100%
+Warehouse,Prologis,L29027,W10874,France,Crimson Creative Agency,83241729,74917556,74918,85%,88%
+Warehouse,Prologis,L29896,W10195,Spain,Proxima Builders,65730396,67702308,71087,93%,100%
+Warehouse,Prologis,L41068,W10882,UK,Horizon Harmonics Music School,64587697,69754713,71847,98%,98%
+Warehouse,Prologis,L69031,W10567,UK,Moonlight Music Academy,6760499,7301339,6571,66%,100%
+Warehouse,Prologis,L52446,W10962,Netherlands,Everest Expeditions,21197634,20561705,20767,56%,100%
+Warehouse,Prologis,L15206,W10863,Netherlands,Celestial Travel Agency,72388394,68768974,71520,87%,100%
+Warehouse,Prologis,L35504,W10310,Italy,Serenity Yoga Studio,42140887,42562296,42137,83%,100%
+Warehouse,Prologis,L26209,W10980,Netherlands,Quantum Innovations,16844736,15665604,16762,57%,100%
+Warehouse,Prologis,L88764,W10912,Portugal,Orion Analytics,96297179,89556376,85974,47%,93%
+Warehouse,Prologis,L52310,W10781,Sweden,Solaris Solutions,82095908,88663581,96643,79%,100%
+Warehouse,Prologis,L62404,W10914,Russia,Oceanic Oil & Gas,20238100,21047624,22942,65%,100%
+Warehouse,Prologis,L63343,W10636,Spain,Horizon Law Firm,38271214,40184775,40587,69%,100%
+Warehouse,Prologis,L28865,W10308,Germany,Thunderbird Aerospace,42626411,41773883,38014,68%,99%
+Warehouse,Prologis,L65864,W10294,Spain,Verdant Valley Farms,60291316,57276750,60141,65%,100%
+Warehouse,Prologis,L54226,W10879,Spain,Galaxy Graphics,38471034,41933427,39417,63%,73%
+Warehouse,Prologis,L20215,W10629,Netherlands,Sunbeam Technologies,9436517,10380169,10588,90%,100%
+Warehouse,Prologis,L69660,W10962,Netherlands,Everest Expeditions,30707646,27943958,25150,68%,90%
+Warehouse,Prologis,L34998,W10970,Sweden,Zenith Zen Spa,37374327,36626840,39191,90%,100%
+Warehouse,Prologis,L34837,W10569,Germany,EchoStar Communications,62364971,61741321,56185,91%,100%
+Warehouse,Prologis,L15509,W10382,Italy,SolarFlare Solar Panels,29691417,32066730,32067,54%,100%
+Warehouse,Prologis,L73039,W10787,Italy,OceanView Oil & Gas,25113572,25113572,25365,61%,100%
+Warehouse,Prologis,L74378,W10101,Germany,Pacific Pearl Investments,58146214,56401828,54710,58%,74%
+Warehouse,Prologis,L48947,W10067,Italy,OceanView Oil & Gas,67505483,70880757,74425,94%,100%
+Warehouse,Prologis,L32324,W10937,France,Tranquil Waters Spa,49412766,51389277,50875,83%,100%
+Warehouse,Prologis,L47022,W10907,Sweden,Aquatic Adventures,47810707,48288814,49737,54%,100%
+Warehouse,Prologis,L25469,W10246,Portugal,TerraFirm Landscaping,13365967,13232307,12703,72%,100%
+Warehouse,Prologis,L17331,W10475,Sweden,Crimson Creative Agency,8469521,7876655,7955,62%,100%
+Warehouse,Prologis,L42398,W10392,Russia,Infinite Horizons Travel,47746467,45359144,40823,69%,100%
+Warehouse,Prologis,L69271,W10185,Russia,Aurora Engineering,87215290,91576055,85166,75%,100%
+Warehouse,Prologis,L28638,W10313,Sweden,Stellar Software Solutions,48058885,50461829,55003,82%,100%
+Warehouse,Prologis,L71678,W10917,Netherlands,Everest Expeditions,96147051,104800286,107944,71%,100%
+Warehouse,Prologis,L67293,W10630,UK,Harmony Health Services,73484872,74219721,69767,73%,85%
+Warehouse,Prologis,L54572,W10248,Russia,SolarWinds Engineering,82202828,89601083,84225,88%,100%
+Warehouse,Prologis,L78097,W10632,Germany,Galaxy Motors,79972922,72775359,76414,74%,100%
+Warehouse,Prologis,L22429,W10589,Italy,Proxima Logistics,26230613,26755225,24080,53%,57%
+Warehouse,Prologis,L19838,W10943,Sweden,Stellar Software Solutions,80464652,85292531,92969,79%,100%
+Warehouse,Prologis,L73047,W10455,Russia,Aurora Engineering,17674341,16083650,16244,49%,100%
+Warehouse,Prologis,L49037,W10047,Germany,Galactic Gaming Studios,79607292,86771948,89375,84%,100%
+Warehouse,Prologis,L35848,W10261,UK,StellarTech Solutions,33863571,32847664,30220,62%,78%
+Warehouse,Prologis,L66667,W10515,Germany,Firefly Technologies,74928380,78674799,72381,66%,100%
+Warehouse,Prologis,L44894,W10260,Netherlands,Quantum Innovations,19016197,20157169,19552,83%,99%
+Warehouse,Prologis,L38777,W10140,Russia,TerraNova Environmental,43939340,48333274,50267,63%,100%
+Warehouse,Prologis,L27829,W10417,Portugal,AquaTrek Adventures,81779917,76055323,72253,74%,100%
+Warehouse,Prologis,L26214,W10233,Netherlands,Celestial Travel Agency,41104117,41515158,43176,71%,82%
+Warehouse,Prologis,L23288,W10445,Italy,Zenith Pharmaceuticals,51059470,47995902,47036,60%,100%
+Warehouse,Prologis,L64079,W10960,Spain,Phoenix Fitness Center,56287747,60790767,66262,60%,100%
+Warehouse,Prologis,L28627,W10487,France,Tranquil Waters Spa,45583694,48774553,44385,62%,100%
+Warehouse,Prologis,L81950,W10058,Italy,Starry Skies Observatory,79738160,86117213,83534,98%,100%
+Warehouse,Prologis,L22073,W10009,UK,Solaris International,76980747,80059977,84864,89%,100%
+Warehouse,Prologis,L64834,W10613,France,GreenEarth Sustainable Living,73216340,68091196,69453,81%,84%
+Warehouse,Prologis,L17812,W10714,Portugal,BrightWave Marketing,80393406,86020944,89462,57%,70%
+Warehouse,Prologis,L73151,W10703,France,GreenEarth Sustainable Living,58577860,60920974,61530,73%,100%
+Warehouse,Prologis,L40720,W10165,Portugal,Crimson Catering,33949408,33949408,34968,92%,100%
+Warehouse,Prologis,L77012,W10008,Netherlands,NovaTech Consulting,51983494,56142174,61756,75%,100%
+Warehouse,Prologis,L30153,W10068,Russia,SolarWinds Engineering,53683880,57441752,56293,81%,100%
+Warehouse,Prologis,L12791,W10682,Sweden,Crystal Clear Pools,17850576,19457128,17706,98%,100%
+Warehouse,Prologis,L72697,W10208,France,Elysian Fashion House,89561260,88665647,97532,78%,80%
+Warehouse,Prologis,L29028,W10763,Sweden,Stellar Software Solutions,17091943,17433782,17782,66%,100%
+Warehouse,Prologis,L34765,W10265,Italy,Zenith Pharmaceuticals,90425953,84096136,91665,81%,100%
+Warehouse,Prologis,L12193,W10773,Netherlands,Celestial Travel Agency,75259236,76011828,79052,63%,100%
+Warehouse,Prologis,L65608,W10754,Sweden,Pinnacle Productions,38992073,35482786,32644,49%,60%
+Warehouse,Prologis,L63280,W10455,Russia,Aurora Engineering,75246423,80513673,86955,59%,100%
+Warehouse,Prologis,L63487,W10428,Russia,SolarWinds Engineering,16774019,16270798,17084,69%,69%
+Warehouse,Prologis,L45022,W10232,Sweden,Crystal Clear Pools,4034926,4438419,4838,92%,100%
+Warehouse,Prologis,L14186,W10528,Spain,Starship Security Services,38917502,36971627,38081,60%,81%
+Warehouse,Prologis,L13311,W10824,Russia,Oceanic Oil & Gas,76933257,77702590,76149,90%,100%
+Warehouse,Prologis,L74787,W10499,Italy,Proxima Logistics,51075208,48010696,50411,55%,100%
+Warehouse,Prologis,L47560,W10307,France,Tranquil Waters Spa,13793129,14068992,13647,52%,100%
+Warehouse,Prologis,L57189,W10030,Portugal,SolarWave Energy Solutions,79750453,78155444,85189,64%,100%
+Warehouse,Prologis,L30610,W10326,Germany,Radiant Realty,47315993,48262313,49228,91%,100%
+Warehouse,Prologis,L80380,W10642,Portugal,Orion Analytics,33021221,34011858,34692,94%,100%
+Warehouse,Prologis,L81758,W10777,Portugal,AquaTrek Adventures,74426188,66983569,67653,64%,100%
+Warehouse,Prologis,L48033,W10526,Italy,Elemental Artistry,75924862,68332376,68332,70%,100%
+Warehouse,Prologis,L47675,W10029,Germany,EchoStar Communications,87144821,84530476,83685,59%,77%
+Warehouse,Prologis,L37768,W10837,UK,Moonlight Music Academy,53035024,50383273,50887,81%,100%
+Warehouse,Prologis,L70144,W10217,France,Tranquil Waters Spa,66703764,70705990,65757,81%,100%
+Warehouse,Prologis,L71894,W10586,France,Luminous Events Planning,98770434,95807321,96765,89%,100%
+Warehouse,Prologis,L62477,W10017,Netherlands,Everest Expeditions,23804201,24280285,21852,60%,100%
+Warehouse,Prologis,L50338,W10525,Portugal,Crimson Catering,95379072,95379072,86795,86%,100%
+Warehouse,Prologis,L33639,W10024,Spain,Verdant Valley Farms,6217550,6652779,6453,88%,100%
+Warehouse,Prologis,L88367,W10002,Germany,Galaxy Motors,23917190,24395534,23420,80%,100%
+Warehouse,Prologis,L38138,W10338,Russia,SolarWinds Engineering,68450540,64343508,57909,73%,100%
+Warehouse,Prologis,L28866,W10169,Sweden,Serenity Salon & Spa,32421549,29503610,29504,85%,87%
+Warehouse,Prologis,L45007,W10388,France,Elysian Fashion House,41672439,45839683,42173,67%,95%
+Warehouse,Prologis,L38073,W10770,Russia,TerraNova Environmental,63998278,58878416,58290,83%,100%
+Warehouse,Prologis,L50535,W10476,Netherlands,Firefly Technologies,68626992,75489691,83039,59%,80%
+Warehouse,Prologis,L39785,W10043,Sweden,Stellar Software Solutions,76363881,83236630,81572,87%,100%
+Warehouse,Prologis,L14157,W10256,Italy,Elemental Artistry,67292484,62582010,63834,88%,100%
+Warehouse,Prologis,L24369,W10167,Russia,AquaSplash Water Park,2112013,2112013,2302,97%,100%
+Warehouse,Prologis,L58039,W10575,Netherlands,Horizon Healthcare Group,86703150,95373465,104911,56%,100%
+Warehouse,Prologis,L55619,W10643,Italy,Golden Gate Catering,54748602,53106144,47796,97%,100%
+Warehouse,Prologis,L19073,W10399,Portugal,Starlight Financial Services,85799321,79793369,80591,53%,100%
+Warehouse,Prologis,L51950,W10087,Spain,Celestial Studios,14892252,16083632,16566,55%,100%
+Warehouse,Prologis,L23568,W10494,Netherlands,Cascade Construction,43072354,43933801,45691,66%,96%
+Warehouse,Prologis,L82878,W10266,Russia,GlobalGreen Energy,64551171,61969124,62589,49%,100%
+Warehouse,Prologis,L88785,W10971,Netherlands,Pinnacle Painters,10460515,10774330,10774,76%,100%
+Warehouse,Prologis,L22004,W10908,Netherlands,NovaTech Consulting,91234025,97620407,97620,60%,100%
+Warehouse,Prologis,L40201,W10467,Netherlands,Everest Expeditions,96415470,90630542,95162,80%,100%
+Warehouse,Prologis,L65705,W10105,Spain,Proxima Builders,6292802,6670370,7071,92%,100%
+Warehouse,Prologis,L77158,W10615,Portugal,Crimson Catering,66612329,60617219,66679,78%,100%
+Warehouse,Prologis,L83632,W10250,Sweden,Zenith Zen Spa,53972185,55591351,50588,68%,83%
+Warehouse,Prologis,L35793,W10681,Spain,Zenith Marketing Group,3419817,3625006,3480,88%,100%
+Warehouse,Prologis,L47347,W10293,Russia,Phoenix Pharmaceuticals,65345030,69265732,74807,81%,86%
+Warehouse,Prologis,L50320,W10980,Netherlands,Quantum Innovations,65449542,58904588,64795,86%,100%
+Warehouse,Prologis,L28214,W10349,Sweden,Serenity Salon & Spa,87477793,81354347,74846,74%,100%
+Warehouse,Prologis,L12263,W10839,Germany,EchoStar Communications,33565490,31215906,29655,84%,100%
+Warehouse,Prologis,L17893,W10288,UK,Alpine Cafe & Bistro,12699318,12445332,12321,70%,100%
+Warehouse,Prologis,L29138,W10103,Italy,Golden Gate Catering,27195170,28826880,30845,84%,100%
+Warehouse,Prologis,L84423,W10643,Italy,Golden Gate Catering,97449776,102322265,103345,100%,100%
+Warehouse,Prologis,L25941,W10536,Russia,GlobalGreen Energy,24761817,27237999,24787,56%,100%
+Warehouse,Prologis,L69623,W10823,Italy,Golden Gate Catering,44586217,43694493,39325,92%,100%
+Warehouse,Prologis,L75062,W10997,Sweden,Aquatic Adventures,67463933,68813212,63308,62%,100%
+Warehouse,Prologis,L81787,W10047,Germany,Galactic Gaming Studios,28750539,30188066,31999,96%,100%
+Warehouse,Prologis,L43878,W10521,Netherlands,Pinnacle Painters,51684226,46515803,49772,50%,82%
+Warehouse,Prologis,L79503,W10224,Netherlands,Cascade Construction,48289462,52635514,50530,77%,95%
+Warehouse,Prologis,L58432,W10458,Netherlands,NovaTech Consulting,91756946,89004238,83664,56%,100%
+Warehouse,Prologis,L44315,W10101,Germany,Pacific Pearl Investments,28745852,26158725,27728,57%,100%
+Warehouse,Prologis,L30656,W10477,UK,Moonlight Music Academy,54706242,58535679,59706,86%,100%
+Warehouse,Prologis,L24802,W10110,Germany,Radiant Cosmetics,29343563,30517306,31738,76%,100%
+Warehouse,Prologis,L28401,W10958,Italy,Starry Skies Observatory,34901323,32458230,30186,48%,100%
+Warehouse,Prologis,L84321,W10113,Russia,Phoenix Pharmaceuticals,34395473,32675699,33656,57%,100%
+Warehouse,Prologis,L38313,W10191,Germany,Pacific Pearl Investments,62360974,64855413,71341,58%,100%
+Warehouse,Prologis,L15035,W10655,Sweden,Crimson Creative Agency,53709317,50486758,47458,82%,100%
+Warehouse,Prologis,L87398,W10291,Portugal,Urban Fusion Architects,48856126,48856126,45925,71%,100%
+Warehouse,Prologis,L12750,W10414,UK,Harmony Health Foods,85501247,76951122,76182,81%,87%
+Warehouse,Prologis,L44994,W10197,Netherlands,Everest Expeditions,75494852,70210212,64593,73%,100%
+Warehouse,Prologis,L37219,W10376,Sweden,Elemental Designs,86397293,79485510,87434,83%,100%
+Warehouse,Prologis,L13272,W10918,UK,Alpine Cafe & Bistro,40883247,38021420,34219,78%,78%
+Warehouse,Prologis,L68310,W10089,Netherlands,Sunbeam Technologies,15855472,14269925,12986,63%,94%
+Warehouse,Prologis,L75693,W10174,Portugal,BrightWave Marketing,10834015,10725675,10189,91%,100%
+Warehouse,Prologis,L57486,W10483,Spain,Zenith Capital Management,62034162,58932454,63058,50%,100%
+Warehouse,Prologis,L13337,W10414,UK,Harmony Health Foods,58091696,56348945,56349,73%,100%
+Warehouse,Prologis,L31911,W10632,Germany,Galaxy Motors,22529245,20501613,20502,56%,100%
+Warehouse,Prologis,L82537,W10748,France,Elysian Fashion House,32935104,35899263,34463,95%,100%
+Warehouse,Prologis,L17579,W10002,Germany,Galaxy Motors,52823761,50182573,49179,48%,100%
+Warehouse,Prologis,L52211,W10541,France,LunaTide Productions,22704244,20660862,19215,91%,100%
+Warehouse,Prologis,L31761,W10318,Portugal,OceanView Real Estate,42694594,42694594,43975,55%,100%
+Warehouse,Prologis,L61479,W10045,UK,Quantum Quill Publishing,15138333,14986950,13488,72%,78%
+Warehouse,Prologis,L81001,W10047,Germany,Galactic Gaming Studios,14747262,13272536,13007,86%,100%
+Warehouse,Prologis,L29418,W10435,Portugal,Crimson Catering,49731141,52217698,49085,73%,100%
+Warehouse,Prologis,L54198,W10525,Portugal,Crimson Catering,32814767,33799210,36503,77%,100%
+Warehouse,Prologis,L55064,W10225,UK,Quantum Quill Publishing,42521685,39545167,36382,76%,100%
+Warehouse,Prologis,L19988,W10433,France,GreenEarth Sustainable Living,72332411,78119004,71088,100%,100%
+Warehouse,Prologis,L27711,W10192,Portugal,Orion Analytics,97670722,96694015,87992,94%,100%
+Warehouse,Prologis,L58592,W10981,UK,StellarTech Solutions,80180042,82585443,90018,83%,100%
+Warehouse,Prologis,L10503,W10472,Italy,SolarFlare Solar Panels,58279972,62359570,56124,83%,100%
+Warehouse,Prologis,L75745,W10596,Germany,Radiant Realty,51401322,46775203,48646,49%,100%
+Warehouse,Prologis,L24286,W10282,Portugal,Orion Analytics,35580466,38782708,40334,71%,100%
+Warehouse,Prologis,L45932,W10679,Italy,Proxima Logistics,44083381,44965049,41817,66%,100%
+Warehouse,Prologis,L18858,W10446,Russia,GlobalGreen Energy,39781394,43361719,43795,92%,100%
+Warehouse,Prologis,L49413,W10840,Portugal,SolarWave Energy Solutions,96898941,96898941,91085,89%,100%
+Warehouse,Prologis,L73218,W10225,UK,Quantum Quill Publishing,9785063,9002258,9272,70%,100%
+Warehouse,Prologis,L30754,W10702,UK,Horizon Harmonics Music School,62668864,57028666,56458,88%,100%
+Warehouse,Prologis,L62820,W10176,Russia,GlobalGreen Energy,8168737,8822236,9175,66%,83%
+Warehouse,Prologis,L18351,W10254,Germany,SolarX Innovations,49495130,54444643,49000,68%,77%
+Warehouse,Prologis,L68820,W10555,Spain,Proxima Builders,60391830,59183993,58592,69%,100%
+Warehouse,Prologis,L12624,W10853,Sweden,Stellar Software Solutions,84108734,82426559,89845,87%,100%
+Warehouse,Prologis,L34796,W10384,Spain,Verdant Valley Farms,80895199,74423583,78889,67%,100%
+Warehouse,Prologis,L36370,W10644,Russia,Oceanic Oil & Gas,28730869,27581634,27030,50%,100%
+Warehouse,Prologis,L20622,W10850,Italy,Serenity Yoga Studio,58267872,63511980,67958,72%,72%
+Warehouse,Prologis,L59505,W10320,Russia,TerraNova Environmental,76714776,82851958,88652,90%,100%
+Warehouse,Prologis,L45675,W10878,Russia,SolarWinds Engineering,91061652,82866103,82037,74%,100%
+Warehouse,Prologis,L87282,W10993,Portugal,Oasis Realty,32325344,32325344,33942,75%,100%
+Warehouse,Prologis,L77206,W10396,UK,SolarGlow Sustainable Energy,94631814,95578132,92711,72%,89%
+Warehouse,Prologis,L69873,W10800,Netherlands,Quantum Innovations,37650467,39909495,40708,87%,100%
+Warehouse,Prologis,L67309,W10805,Italy,Zenith Pharmaceuticals,16072325,17197388,17713,80%,100%
+Warehouse,Prologis,L11531,W10193,Italy,Golden Gate Catering,64052852,62131266,65859,49%,58%
+Warehouse,Prologis,L31120,W10428,Russia,SolarWinds Engineering,63210039,57521135,61548,54%,100%
+Warehouse,Prologis,L59209,W10129,Portugal,Starlight Financial Services,74677779,79905224,75910,87%,100%
+Warehouse,Prologis,L52934,W10300,Portugal,SolarWave Energy Solutions,15552830,14775189,15662,94%,100%
+Warehouse,Prologis,L48445,W10795,Portugal,Crimson Catering,93508192,91638028,86140,49%,88%
+Warehouse,Prologis,L74135,W10034,Sweden,Pinnacle Productions,72830294,80113323,72903,59%,100%
+Warehouse,Prologis,L64173,W10713,Germany,Atlas Logistics,9573639,8807748,7927,56%,100%
+Warehouse,Prologis,L22237,W10464,Russia,Oceanic Oil & Gas,52148237,48497860,48983,52%,52%
+Warehouse,Prologis,L59647,W10474,Spain,Verdant Valley Farms,59614849,59018701,53117,89%,100%
+Warehouse,Prologis,L16290,W10383,Russia,Phoenix Pharmaceuticals,44261168,43818556,40313,64%,100%
+Warehouse,Prologis,L71001,W10613,France,GreenEarth Sustainable Living,60570347,58753237,60516,71%,100%
+Warehouse,Prologis,L77684,W10105,Spain,Proxima Builders,10180900,9773664,9480,71%,100%
+Warehouse,Prologis,L49092,W10207,UK,Moonlight Music Academy,80433879,87672928,79782,94%,100%
+Warehouse,Prologis,L31207,W10869,Russia,Aurora Accounting Services,10396773,11228515,11902,97%,100%
+Warehouse,Prologis,L40735,W10034,Sweden,Pinnacle Productions,92528387,91603103,86107,49%,67%
+Warehouse,Prologis,L63827,W10952,Sweden,Crystal Clear Pools,76197865,79245780,87170,95%,100%
+Warehouse,Prologis,L53055,W10152,Netherlands,Everest Expeditions,13493263,12548735,13051,52%,94%
+Warehouse,Prologis,L69398,W10967,Italy,OceanView Oil & Gas,33922294,36975300,39933,69%,100%
+Warehouse,Prologis,L19562,W10274,Italy,Evolve Fitness Club,37573113,38324575,36025,89%,95%
+Warehouse,Prologis,L61991,W10170,Netherlands,Quantum Innovations,50170348,45655017,43372,63%,100%
+Warehouse,Prologis,L69347,W10423,UK,Alpine Adventures,45748539,43003627,43864,69%,100%
+Warehouse,Prologis,L26849,W10577,France,Tranquil Waters Spa,36012484,34932109,33884,87%,98%
+Warehouse,Prologis,L34673,W10208,France,Elysian Fashion House,9035081,9667537,9184,89%,100%
+Warehouse,Prologis,L76852,W10428,Russia,SolarWinds Engineering,93482819,86939022,84331,81%,100%
+Warehouse,Prologis,L14318,W10753,Spain,Zenith Capital Management,45092389,40583150,39771,47%,60%
+Warehouse,Prologis,L19683,W10460,France,Unity Web Solutions,26256119,25468435,23176,90%,100%
+Warehouse,Prologis,L55059,W10620,Netherlands,Quantum Innovations,20197512,20197512,19794,70%,100%
+Warehouse,Prologis,L21521,W10679,Italy,Proxima Logistics,25769385,23450140,23216,48%,75%
+Warehouse,Prologis,L80252,W10216,UK,SolarGlow Sustainable Energy,73221025,75417656,82959,77%,79%
+Warehouse,Prologis,L80489,W10903,Portugal,Oasis Realty,51057516,52589241,55219,67%,75%
+Warehouse,Prologis,L73158,W10143,Netherlands,Celestial Travel Agency,8153516,7908911,8463,84%,100%
+Warehouse,Prologis,L88992,W10228,Portugal,OceanView Real Estate,15699108,16327072,16817,87%,100%
+Warehouse,Prologis,L55098,W10427,Italy,OceanView Oil & Gas,22703662,21341442,20915,89%,100%
+Warehouse,Prologis,L87939,W10213,Spain,Zenith Capital Management,11687831,11220318,10098,62%,73%
+Warehouse,Prologis,L72404,W10340,Sweden,Zenith Zen Spa,52019347,53059734,57835,59%,100%
+Warehouse,Prologis,L13573,W10907,Sweden,Aquatic Adventures,49069950,47107152,48991,93%,95%
+Warehouse,Prologis,L64605,W10267,Spain,Celestial Studios,7304125,6719795,6585,56%,100%
+Warehouse,Prologis,L78107,W10587,Germany,Galactic Gaming Studios,21029217,19346880,18380,56%,77%
+Warehouse,Prologis,L70444,W10801,UK,StellarTech Solutions,42434010,45828731,47662,96%,100%
+Warehouse,Prologis,L80723,W10428,Russia,SolarWinds Engineering,75846439,70537188,71948,86%,100%
+Warehouse,Prologis,L12909,W10136,France,Luminous Events Planning,78663242,71583550,78026,67%,100%
+Warehouse,Prologis,L34146,W10721,France,LunaTide Productions,9989083,10388646,9454,86%,100%
+Warehouse,Prologis,L21652,W10879,Spain,Galaxy Graphics,98256995,100222135,91202,55%,100%
+Warehouse,Prologis,L70392,W10834,Spain,Verdant Valley Farms,87001330,95701463,90916,67%,96%
+Warehouse,Prologis,L53119,W10540,UK,Harmony Health Services,99514176,108470452,100878,100%,100%
+Warehouse,Prologis,L66760,W10401,Russia,Envision Architects,88135433,88135433,96068,77%,100%
+Warehouse,Prologis,L63547,W10026,Netherlands,Firefly Technologies,12660873,13926960,14763,100%,100%
+Warehouse,Prologis,L27931,W10036,UK,SolarGlow Sustainable Energy,24447142,22491371,23616,53%,100%
+Warehouse,Prologis,L28766,W10854,Netherlands,Cascade Construction,47169060,45282298,49358,86%,100%
+Warehouse,Prologis,L38221,W10018,UK,Alpine Cafe & Bistro,86731846,88466483,93774,78%,100%
+Warehouse,Prologis,L15589,W10753,Spain,Zenith Capital Management,69659542,73839115,68670,64%,100%
+Warehouse,Prologis,L38664,W10356,Russia,GlobalGreen Energy,19541882,18564788,17637,87%,100%
+Warehouse,Prologis,L12330,W10448,Sweden,Nexus Financial Group,14393149,13097766,12705,50%,65%
+Warehouse,Prologis,L73477,W10297,UK,Moonlight Music Academy,83521812,82686594,76899,89%,100%
+Warehouse,Prologis,L25705,W10208,France,Elysian Fashion House,64393128,58597746,53324,49%,57%
+Warehouse,Prologis,L47054,W10946,France,Luminous Events Planning,2837277,2667040,2480,82%,100%
+Warehouse,Prologis,L88848,W10982,France,Fusion Foods Inc.,83055064,79732861,76544,70%,100%
+Warehouse,Prologis,L51900,W10679,Italy,Proxima Logistics,61795049,56851445,62537,70%,100%
+Warehouse,Prologis,L78218,W10931,Italy,SilverLakes Realty,70702567,75651747,72626,100%,100%
+Warehouse,Prologis,L12718,W10489,Portugal,Starlight Financial Services,97159020,103960151,110198,64%,100%
+Warehouse,Prologis,L89727,W10970,Sweden,Zenith Zen Spa,12420422,13289852,12625,100%,100%
+Warehouse,Prologis,L60915,W10492,Spain,Elemental Eats Catering,54592217,56775906,58479,56%,100%
+Warehouse,Prologis,L13377,W10663,Spain,Zenith Capital Management,49545681,50536595,52558,79%,100%
+Warehouse,Prologis,L75197,W10856,France,Luminous Events Planning,81212973,82837232,86151,66%,100%
+Warehouse,Prologis,L39883,W10128,Germany,Thunderbird Aerospace,85222628,80961497,85010,74%,100%
+Warehouse,Prologis,L83075,W10535,Italy,Zenith Pharmaceuticals,9145984,9877663,10668,100%,100%
+Warehouse,Prologis,L32336,W10366,Spain,Horizon Law Firm,34895254,34546301,33164,55%,75%
+Warehouse,Prologis,L23506,W10111,Portugal,Urban Fusion Architects,4030721,3829185,3829,78%,100%
+Warehouse,Prologis,L84278,W10328,Italy,Starry Skies Observatory,96967637,104725048,101583,94%,100%
+Warehouse,Prologis,L61531,W10082,France,Fusion Foods Inc.,86013238,81712576,76810,48%,100%
+Warehouse,Prologis,L24452,W10549,UK,Solaris International,49880016,50378816,49875,74%,85%
+Warehouse,Prologis,L19476,W10951,Spain,Zenith Marketing Group,47707613,44845156,43051,84%,100%
+Warehouse,Prologis,L17767,W10098,Netherlands,NovaTech Consulting,41542975,44035554,39632,98%,100%
+Warehouse,Prologis,L40889,W10148,Italy,Starry Skies Observatory,80960539,86627777,83163,55%,95%
+Warehouse,Prologis,L48241,W10209,Germany,EchoStar Communications,237340,223100,221,87%,100%
+Warehouse,Prologis,L61269,W10731,Germany,Pacific Pearl Investments,99285987,108221726,97400,61%,100%
+Warehouse,Prologis,L51960,W10433,France,GreenEarth Sustainable Living,27114905,25759160,26274,57%,80%
+Warehouse,Prologis,L43718,W10354,Portugal,BrightWave Marketing,2005392,1985338,2124,58%,91%
+Warehouse,Prologis,L58535,W10422,Netherlands,Everest Expeditions,86079791,90383781,92191,92%,100%
+Warehouse,Prologis,L24278,W10269,Netherlands,Sunbeam Technologies,9757075,9952217,10052,71%,76%
+Warehouse,Prologis,L30470,W10042,Spain,Elemental Eats Catering,71506220,76511655,70391,56%,100%
+Warehouse,Prologis,L85659,W10587,Germany,Galactic Gaming Studios,1821524,1839739,1821,81%,100%
+Warehouse,Prologis,L73118,W10449,Netherlands,Sunbeam Technologies,45260372,49333805,45387,56%,100%
+Warehouse,Prologis,L39776,W10454,Italy,Evolve Fitness Club,95430670,99247897,91308,66%,100%
+Warehouse,Prologis,L54571,W10957,Portugal,AquaTrek Adventures,72737339,76374206,78665,53%,100%
+Warehouse,Prologis,L79656,W10666,UK,SolarGlow Sustainable Energy,94822225,100511559,92471,80%,100%
+Warehouse,Prologis,L16348,W10488,Germany,Thunderbird Aerospace,7954106,7158695,7588,70%,100%
+Warehouse,Prologis,L37065,W10261,UK,StellarTech Solutions,40983234,44671725,41545,90%,100%
+Warehouse,Prologis,L22562,W10829,France,TerraVista Landscaping,72337144,70167030,64554,66%,100%
+Warehouse,Prologis,L81095,W10945,UK,Quantum Quill Publishing,40148934,39345955,38952,76%,100%
+Warehouse,Prologis,L83553,W10517,Italy,OceanView Oil & Gas,32178570,34431070,33742,79%,93%
+Warehouse,Prologis,L60552,W10324,UK,Harmony Health Foods,75888087,83476896,80973,72%,100%
+Warehouse,Prologis,L38519,W10150,Spain,Phoenix Fitness Center,1339348,1473283,1591,70%,100%
+Warehouse,Prologis,L35257,W10664,Sweden,Pinnacle Productions,35518601,34453043,31352,83%,100%
+Warehouse,Prologis,L34914,W10292,Italy,SolarFlare Solar Panels,84762290,87305159,96036,94%,100%
+Warehouse,Prologis,L23454,W10649,France,TerraVista Landscaping,82252286,78962195,82121,50%,57%
+Warehouse,Prologis,L17435,W10788,Russia,SolarWinds Engineering,85445571,77755470,75423,51%,58%
+Warehouse,Prologis,L56142,W10197,Netherlands,Everest Expeditions,24740013,22266012,22489,60%,71%
+Warehouse,Prologis,L56591,W10079,Sweden,Serenity Salon & Spa,53295321,51163508,54233,64%,80%
+Warehouse,Prologis,L51591,W10330,Spain,Phoenix Fitness Center,53979468,58837620,60014,69%,100%
+Warehouse,Prologis,L12818,W10246,Portugal,TerraFirm Landscaping,61343063,66250508,72876,74%,100%
+Warehouse,Prologis,L45481,W10730,France,Unity Web Solutions,33561150,30205035,30205,69%,79%
+Warehouse,Prologis,L66859,W10204,Spain,Verdant Valley Farms,27841690,28676941,26956,97%,100%
+Warehouse,Prologis,L18611,W10952,Sweden,Crystal Clear Pools,81539421,79908633,79110,63%,100%
+Warehouse,Prologis,L86420,W10446,Russia,GlobalGreen Energy,2366426,2579404,2734,94%,100%
+Warehouse,Prologis,L13840,W10379,France,TerraVista Landscaping,77561950,85318145,89584,100%,100%
+Warehouse,Prologis,L43659,W10071,Netherlands,Pinnacle Painters,82229865,80585268,87032,74%,100%
+Warehouse,Prologis,L29354,W10099,UK,Solaris International,25407965,24137567,24379,50%,100%
+Warehouse,Prologis,L34281,W10373,Italy,Golden Gate Catering,49042211,47570945,44717,84%,100%
+Warehouse,Prologis,L42152,W10126,UK,SolarGlow Sustainable Energy,6069175,5765716,5881,62%,100%
+Warehouse,Prologis,L79092,W10145,France,Moonlight Motors,25464158,23427025,22958,76%,100%
+Warehouse,Prologis,L63021,W10083,Germany,Atlas Logistics,25586986,26866335,24180,77%,100%
+Warehouse,Prologis,L67867,W10404,Netherlands,Cascade Construction,67473883,61401234,55261,88%,100%
+Warehouse,Prologis,L65611,W10648,UK,Alpine Cafe & Bistro,37266854,35776180,39354,95%,100%
+Warehouse,Prologis,L50424,W10319,Italy,Proxima Logistics,39511707,42672644,43953,90%,100%
+Warehouse,Prologis,L36604,W10429,Spain,Galaxy Graphics,55422262,58193375,62849,98%,100%
+Warehouse,Prologis,L55851,W10483,Spain,Zenith Capital Management,99018833,91097326,92008,72%,100%
+Warehouse,Prologis,L21605,W10518,Russia,SolarWinds Engineering,49421675,47444808,48868,56%,59%
+Warehouse,Prologis,L54397,W10105,Spain,Proxima Builders,1053848,990617,991,79%,100%
+Warehouse,Prologis,L86738,W10867,Portugal,AquaTrek Adventures,26562895,28953556,29243,75%,100%
+Warehouse,Prologis,L74021,W10572,Russia,Infinite Horizons Travel,52089102,47921974,52235,81%,89%
+Warehouse,Prologis,L30692,W10102,Portugal,Orion Analytics,94227723,94227723,92343,66%,100%
+Warehouse,Prologis,L71218,W10579,Portugal,Starlight Financial Services,20432760,21658726,19493,57%,100%
+Warehouse,Prologis,L65043,W10734,Russia,Oceanic Oil & Gas,20681898,21922812,19731,100%,100%
+Warehouse,Prologis,L15842,W10170,Netherlands,Quantum Innovations,48652529,49625580,50122,100%,100%
+Warehouse,Prologis,L25652,W10641,Germany,Pacific Pearl Investments,89001955,86331896,92375,75%,75%
+Warehouse,Prologis,L40811,W10063,UK,Alpine Adventures,57827323,52044591,53085,83%,100%
+Warehouse,Prologis,L43651,W10063,UK,Alpine Adventures,22100841,21216807,21853,78%,85%
+Warehouse,Prologis,L71922,W10120,Portugal,SolarWave Energy Solutions,46705090,42968683,40820,88%,100%
+Warehouse,Prologis,L66693,W10468,UK,Alpine Cafe & Bistro,11331721,12464893,12340,55%,100%
+Warehouse,Prologis,L83523,W10903,Portugal,Oasis Realty,75068738,69813926,62833,90%,100%
+Warehouse,Prologis,L39796,W10497,Germany,Galactic Gaming Studios,93792329,91916482,101108,89%,100%
+Warehouse,Prologis,L88886,W10509,Russia,Aurora Accounting Services,4055661,4015104,3935,68%,92%
+Warehouse,Prologis,L27831,W10669,Portugal,Starlight Financial Services,137373,138747,129,97%,98%
+Warehouse,Prologis,L47216,W10407,Germany,Galactic Gaming Studios,72882131,69238024,67161,52%,100%
+Warehouse,Prologis,L58311,W10505,France,Moonlight Motors,60952736,60343209,59740,97%,100%
+Warehouse,Prologis,L27415,W10505,France,Moonlight Motors,83679543,90373906,95796,89%,100%
+Warehouse,Prologis,L38697,W10524,Germany,SolarX Innovations,97079151,94166776,99817,92%,96%
+Warehouse,Prologis,L70002,W10498,Portugal,OceanView Real Estate,59321269,64066971,69833,66%,100%
+Warehouse,Prologis,L10043,W10143,Netherlands,Celestial Travel Agency,83501385,75986260,72947,86%,100%
+Warehouse,Prologis,L75902,W10397,France,Tranquil Waters Spa,24585937,25077656,26833,67%,100%
+Warehouse,Prologis,L23274,W10169,Sweden,Serenity Salon & Spa,93180540,88521513,92062,64%,100%
+Warehouse,Prologis,L65734,W10861,Spain,Zenith Marketing Group,13085758,13740046,12916,59%,100%
+Warehouse,Prologis,L39425,W10849,Portugal,Starlight Financial Services,40587796,41805430,44314,79%,86%
+Warehouse,Prologis,L37177,W10323,Netherlands,Celestial Travel Agency,84250859,87620893,89373,63%,100%
+Warehouse,Prologis,L76165,W10310,Italy,Serenity Yoga Studio,86169155,91339304,88599,85%,92%
+Warehouse,Prologis,L77574,W10988,Sweden,Nexus Financial Group,48460093,51367699,50854,98%,100%
+Warehouse,Prologis,L18881,W10762,Spain,Elemental Eats Catering,77817137,75482623,83031,75%,100%
+Warehouse,Prologis,L89231,W10547,Sweden,Aquatic Adventures,65826691,63193623,66353,75%,100%
+Warehouse,Prologis,L84855,W10016,Sweden,Elemental Designs,66579826,66579826,70575,86%,100%
+Warehouse,Prologis,L48267,W10355,Italy,Zenith Pharmaceuticals,25141638,27655802,29868,92%,100%
+Warehouse,Prologis,L39814,W10975,Portugal,Crimson Catering,89058345,89948928,82753,79%,100%
+Warehouse,Prologis,L65612,W10781,Sweden,Solaris Solutions,65046113,64395652,66971,76%,100%
+Warehouse,Prologis,L25755,W10302,Russia,Infinite Horizons Travel,54083630,48675267,44781,75%,77%
+Warehouse,Prologis,L30823,W10258,Spain,Starship Security Services,19178499,21096349,21940,67%,100%
+Warehouse,Prologis,L82574,W10609,Spain,Galaxy Graphics,57106979,55393770,58163,54%,55%
+Warehouse,Prologis,L86024,W10251,Netherlands,Pinnacle Painters,34342611,34342611,35716,68%,85%
+Warehouse,Prologis,L75722,W10132,Spain,Elemental Eats Catering,94849608,100540584,95514,70%,100%
+Warehouse,Prologis,L24323,W10906,Spain,Horizon Law Firm,93290040,97954542,100893,58%,100%
+Warehouse,Prologis,L57824,W10524,Germany,SolarX Innovations,24234763,25688849,27230,75%,100%
+Warehouse,Prologis,L40077,W10833,Russia,Phoenix Pharmaceuticals,65542214,60298837,65726,50%,100%
+Warehouse,Prologis,L86031,W10395,Netherlands,Horizon Healthcare Group,2005828,1945653,1848,57%,60%
+Warehouse,Prologis,L32704,W10527,Russia,AquaSplash Water Park,24987613,26736746,28608,66%,100%
+Warehouse,Prologis,L88541,W10050,Russia,TerraNova Environmental,10253096,10150565,9745,85%,100%
+Warehouse,Prologis,L17266,W10004,Italy,Evolve Fitness Club,61199962,63035961,61145,92%,100%
+Warehouse,Prologis,L13974,W10686,Germany,Radiant Realty,35380386,38210817,34390,82%,100%
+Warehouse,Prologis,L60753,W10407,Germany,Galactic Gaming Studios,78277597,73580941,72109,79%,96%
+Warehouse,Prologis,L36210,W10354,Portugal,BrightWave Marketing,19846171,18258477,16615,86%,100%
+Warehouse,Prologis,L68812,W10890,Netherlands,Quantum Innovations,71396921,64257229,59759,85%,92%
+Warehouse,Prologis,L87399,W10633,Portugal,Oasis Realty,42067360,41226013,43287,89%,100%
+Warehouse,Prologis,L40298,W10371,Germany,Pacific Pearl Investments,9017834,8476764,7799,61%,80%
+Warehouse,Prologis,L70495,W10409,Italy,Proxima Logistics,59158577,58566991,61495,64%,100%
+Warehouse,Prologis,L80694,W10161,Netherlands,Pinnacle Painters,56772411,53366066,56568,53%,100%
+Warehouse,Prologis,L60363,W10928,France,Elysian Fashion House,57285503,60149778,63157,60%,100%
+Warehouse,Prologis,L80281,W10417,Portugal,AquaTrek Adventures,91211845,88475490,87591,95%,100%
+Warehouse,Prologis,L55319,W10302,Russia,Infinite Horizons Travel,79846281,79846281,74257,62%,100%
+Warehouse,Prologis,L58239,W10287,Netherlands,Everest Expeditions,70051240,65147653,70359,86%,100%
+Warehouse,Prologis,L63266,W10338,Russia,SolarWinds Engineering,66419420,63098449,69408,57%,65%
+Warehouse,Prologis,L10367,W10410,Russia,TerraNova Environmental,123737,115075,116,78%,100%
+Warehouse,Prologis,L10854,W10010,France,Unity Web Solutions,54704066,57439269,62034,67%,70%
+Warehouse,Prologis,L76469,W10695,Germany,Firefly Technologies,34709787,36445276,37174,57%,100%
+Warehouse,Prologis,L89958,W10097,Sweden,Aquatic Adventures,87478964,83105016,76457,78%,100%
+Warehouse,Prologis,L19608,W10782,Netherlands,Everest Expeditions,83422167,83422167,80085,61%,88%
+Warehouse,Prologis,L77649,W10756,UK,SolarGlow Sustainable Energy,27518226,29994866,29695,82%,100%
+Warehouse,Prologis,L71575,W10918,UK,Alpine Cafe & Bistro,88393054,87509123,81383,69%,100%
+Warehouse,Prologis,L25530,W10646,Sweden,Elemental Designs,35584378,33093472,36072,50%,53%
+Warehouse,Prologis,L78397,W10268,Sweden,Nexus Financial Group,3314373,3181798,2991,66%,75%
+Warehouse,Prologis,L54608,W10806,Russia,GlobalGreen Energy,92613566,99096516,98106,80%,100%
+Warehouse,Prologis,L43956,W10983,Germany,Atlas Logistics,63801496,61249436,64312,79%,100%
+Warehouse,Prologis,L33024,W10352,France,Fusion Foods Inc.,38639065,37093502,40061,53%,100%
+Warehouse,Prologis,L87530,W10138,Portugal,OceanView Real Estate,21024155,19762706,20553,69%,100%
+Warehouse,Prologis,L75657,W10081,UK,StellarTech Solutions,50945428,45850885,42183,47%,100%
+Warehouse,Prologis,L81976,W10001,France,LunaTide Productions,36517661,37978367,40637,96%,100%
+Warehouse,Prologis,L55984,W10004,Italy,Evolve Fitness Club,67292428,73348747,71882,98%,100%
+Warehouse,Prologis,L87179,W10246,Portugal,TerraFirm Landscaping,87513759,96265135,102041,76%,100%
+Warehouse,Prologis,L63222,W10970,Sweden,Zenith Zen Spa,81769962,80952262,85000,70%,100%
+Warehouse,Prologis,L70978,W10205,Sweden,Crimson Creative Agency,10840764,10190318,10394,65%,100%
+Warehouse,Prologis,L19821,W10441,UK,StellarTech Solutions,18864237,19241522,19819,52%,100%
+Warehouse,Prologis,L15743,W10794,Germany,SolarX Innovations,57479845,57479845,60929,52%,100%
+Warehouse,Prologis,L63434,W10367,Sweden,Aquatic Adventures,88762967,82549559,90805,53%,100%
+Warehouse,Prologis,L39279,W10619,Sweden,Serenity Salon & Spa,14810599,15106811,16013,58%,100%
+Warehouse,Prologis,L20571,W10465,Spain,Proxima Builders,49536425,52013246,50973,75%,100%
+Warehouse,Prologis,L54396,W10277,Sweden,Aquatic Adventures,10706024,10813084,11354,92%,100%
+Warehouse,Prologis,L51914,W10423,UK,Alpine Adventures,79609826,78813728,72509,63%,100%
+Warehouse,Prologis,L17578,W10236,Germany,Radiant Realty,99866184,94872875,101514,64%,100%
+Warehouse,Prologis,L73544,W10374,Russia,Oceanic Oil & Gas,79013048,79013048,80593,87%,100%
+Warehouse,Prologis,L53678,W10521,Netherlands,Pinnacle Painters,99143936,100135375,104141,89%,100%
+Warehouse,Prologis,L62579,W10260,Netherlands,Quantum Innovations,56893543,55186737,52427,51%,60%
+Warehouse,Prologis,L21426,W10442,France,Fusion Foods Inc.,22622138,21264810,19564,64%,71%
+Warehouse,Prologis,L73969,W10013,Italy,Golden Gate Catering,46218812,50378505,51890,94%,100%
+Warehouse,Prologis,L75263,W10667,France,Tranquil Waters Spa,21947692,20411354,22452,65%,100%
+Warehouse,Prologis,L69179,W10455,Russia,Aurora Engineering,59669711,63846591,65124,97%,100%
+Warehouse,Prologis,L57244,W10558,UK,Alpine Cafe & Bistro,87217973,88962332,81845,53%,88%
+Warehouse,Prologis,L34502,W10510,Spain,Phoenix Fitness Center,12693546,12947417,12947,76%,83%
+Warehouse,Prologis,L65339,W10577,France,Tranquil Waters Spa,12494786,11745099,11158,92%,100%
+Warehouse,Prologis,L59053,W10491,Russia,Envision Architects,90854472,93580106,91709,63%,94%
+Warehouse,Prologis,L69089,W10703,France,GreenEarth Sustainable Living,49376102,46907297,50660,93%,100%
+Warehouse,Prologis,L86431,W10969,Spain,Galaxy Graphics,17100911,17955957,17597,53%,60%
+Warehouse,Prologis,L33077,W10426,Portugal,TerraFirm Landscaping,10553639,9498275,8738,61%,70%
+Warehouse,Prologis,L49877,W10638,Netherlands,NovaTech Consulting,68797426,74989194,76489,55%,100%
+Warehouse,Prologis,L48286,W10139,Italy,Proxima Logistics,15488361,13939525,13800,59%,69%
+Warehouse,Prologis,L52138,W10937,France,Tranquil Waters Spa,74246623,70534292,64892,65%,100%
+Warehouse,Prologis,L59223,W10585,UK,Quantum Quill Publishing,69314042,69314042,72087,71%,100%
+Warehouse,Prologis,L51623,W10709,Sweden,Serenity Salon & Spa,85466002,76919402,74612,76%,100%
+Warehouse,Prologis,L70537,W10189,UK,Solaris International,74017808,68096383,68096,53%,55%
+Warehouse,Prologis,L86285,W10096,Spain,Horizon Law Firm,53368956,51234198,54821,80%,96%
+Warehouse,Prologis,L15588,W10577,France,Tranquil Waters Spa,36279687,33014515,35986,86%,100%
+Warehouse,Prologis,L42709,W10682,Sweden,Crystal Clear Pools,68198728,70244690,63923,61%,100%
+Warehouse,Prologis,L16287,W10626,Russia,GlobalGreen Energy,7930147,7612941,7308,75%,100%
+Warehouse,Prologis,L17885,W10666,UK,SolarGlow Sustainable Energy,81647571,84096998,79892,100%,100%
+Warehouse,Prologis,L20652,W10015,Spain,Proxima Builders,58339332,61256299,67382,71%,100%
+Warehouse,Prologis,L64026,W10016,Sweden,Elemental Designs,62811618,56530456,59357,76%,100%
+Warehouse,Prologis,L78611,W10206,Netherlands,Firefly Technologies,97842079,89036292,90817,48%,100%
+Warehouse,Prologis,L32499,W10121,Italy,SilverLakes Realty,5976363,5558018,6003,59%,60%
+Warehouse,Prologis,L43001,W10470,Germany,Radiant Cosmetics,33892615,32536910,29609,77%,98%
+Warehouse,Prologis,L26649,W10253,France,GreenEarth Sustainable Living,43169615,42737919,38464,93%,97%
+Warehouse,Prologis,L73664,W10054,UK,Harmony Health Foods,97835026,102726777,95536,89%,100%
+Warehouse,Prologis,L82219,W10602,Netherlands,Everest Expeditions,93018213,98599306,100571,84%,100%
+Warehouse,Prologis,L71467,W10587,Germany,Galactic Gaming Studios,21910007,23881908,22688,91%,100%
+Warehouse,Prologis,L72744,W10899,Netherlands,Sunbeam Technologies,4380750,3942675,3627,49%,100%
+Warehouse,Prologis,L60652,W10578,Germany,Thunderbird Aerospace,20064336,21268196,20417,75%,100%
+Warehouse,Prologis,L31922,W10703,France,GreenEarth Sustainable Living,63188253,67611431,64907,70%,100%
+Warehouse,Prologis,L58082,W10245,Germany,Firefly Technologies,38311377,40993173,39353,79%,100%
+Warehouse,Prologis,L12965,W10946,France,Luminous Events Planning,60206312,57798060,56064,91%,93%
+Warehouse,Prologis,L48912,W10043,Sweden,Stellar Software Solutions,24961606,27208151,25848,57%,58%
+Warehouse,Prologis,L64568,W10864,UK,Harmony Health Foods,7918917,7364593,8027,52%,76%
+Warehouse,Prologis,L30325,W10579,Portugal,Starlight Financial Services,7270958,7707215,7168,84%,100%
+Warehouse,Prologis,L83344,W10430,Sweden,Zenith Zen Spa,93291301,83962171,85641,58%,91%
+Warehouse,Prologis,L41400,W10135,UK,Quantum Quill Publishing,6858932,6378807,6124,71%,100%
+Warehouse,Prologis,L50283,W10563,Russia,Phoenix Pharmaceuticals,61706129,67259681,66587,86%,100%
+Warehouse,Prologis,L14763,W10589,Italy,Proxima Logistics,7445080,7072826,7214,58%,60%
+Warehouse,Prologis,L88510,W10493,Sweden,Stellar Software Solutions,94876579,85388921,93928,80%,83%
+Warehouse,Prologis,L65548,W10753,Spain,Zenith Capital Management,6432637,6625616,6957,95%,100%
+Warehouse,Prologis,L76938,W10865,France,Moonlight Motors,86180148,81871141,81871,92%,100%
+Warehouse,Prologis,L74822,W10353,Germany,Atlas Logistics,60444509,62862289,62234,100%,100%
+Warehouse,Prologis,L85875,W10050,Russia,TerraNova Environmental,34359383,30923445,32160,84%,100%
+Warehouse,Prologis,L28177,W10668,Germany,Thunderbird Aerospace,90695989,94323829,96210,56%,100%
+Warehouse,Prologis,L41368,W10613,France,GreenEarth Sustainable Living,16334853,15191413,16559,58%,82%
+Warehouse,Prologis,L17128,W10197,Netherlands,Everest Expeditions,79402753,82578863,80101,64%,80%
+Warehouse,Prologis,L19613,W10389,Germany,EchoStar Communications,66130413,65469109,65469,88%,100%
+Warehouse,Prologis,L27025,W10766,France,Luminous Events Planning,69528968,70919547,75175,61%,100%
+Warehouse,Prologis,L87572,W10364,Italy,Evolve Fitness Club,81564361,75854856,73579,78%,100%
+Warehouse,Prologis,L27828,W10384,Spain,Verdant Valley Farms,67925684,61812372,56249,75%,100%
+Warehouse,Prologis,L45201,W10176,Russia,GlobalGreen Energy,79827245,84616880,88002,96%,100%
+Warehouse,Prologis,L20406,W10214,Sweden,Pinnacle Productions,61741407,57419509,60290,73%,100%
+Warehouse,Prologis,L47853,W10290,Germany,Radiant Cosmetics,36299434,39566383,37192,68%,100%
+Warehouse,Prologis,L69891,W10267,Spain,Celestial Studios,37593887,35338254,32158,53%,54%
+Warehouse,Prologis,L26688,W10683,Netherlands,Celestial Travel Agency,26586995,27384605,29028,61%,87%
+Warehouse,Prologis,L27521,W10392,Russia,Infinite Horizons Travel,1902500,2073725,1929,88%,100%
+Warehouse,Prologis,L21785,W10430,Sweden,Zenith Zen Spa,70512049,63460844,68538,81%,100%
+Warehouse,Prologis,L20514,W10099,UK,Solaris International,47064510,51300316,55404,66%,100%
+Warehouse,Prologis,L68510,W10860,Russia,TerraNova Environmental,22013229,21132700,19231,84%,100%
+Warehouse,Prologis,L63075,W10911,Germany,Pacific Pearl Investments,84472521,76025269,79066,54%,100%
+Warehouse,Prologis,L25901,W10888,Spain,Starship Security Services,62676041,62049281,64531,65%,100%
+Warehouse,Prologis,L35769,W10064,France,Crimson Creative Agency,45716538,48459530,47006,68%,76%
+Warehouse,Prologis,L22373,W10496,France,Luminous Events Planning,5486426,5376697,5753,70%,100%
+Warehouse,Prologis,L80108,W10602,Netherlands,Everest Expeditions,83136163,75653908,80950,58%,100%
+Warehouse,Prologis,L40399,W10680,Russia,TerraNova Environmental,24608775,24116600,26046,76%,100%
+Warehouse,Prologis,L35688,W10056,Germany,Radiant Realty,51869880,49795085,51787,78%,100%
+Warehouse,Prologis,L62977,W10382,Italy,SolarFlare Solar Panels,49985798,54484520,50126,62%,100%
+Warehouse,Prologis,L36472,W10078,Spain,Starship Security Services,5801656,6207772,6022,74%,100%
+Warehouse,Prologis,L38641,W10520,Sweden,Zenith Zen Spa,60659902,61873100,60017,60%,100%
+Warehouse,Prologis,L47995,W10427,Italy,OceanView Oil & Gas,48168595,46723537,45789,72%,79%
+Warehouse,Prologis,L74702,W10999,UK,Solaris International,34329602,33643010,31961,52%,100%
+Warehouse,Prologis,L13388,W10359,Netherlands,Sunbeam Technologies,79409669,73056895,74518,53%,100%
+Warehouse,Prologis,L54590,W10647,Netherlands,Everest Expeditions,35686920,35330051,38510,99%,100%
+Warehouse,Prologis,L33933,W10851,Russia,Envision Architects,35119255,34416870,33040,94%,97%
+Warehouse,Prologis,L39346,W10962,Netherlands,Everest Expeditions,34348081,30913273,30295,71%,100%
+Warehouse,Prologis,L52958,W10655,Sweden,Crimson Creative Agency,350969,333421,330,71%,100%
+Warehouse,Prologis,L63336,W10236,Germany,Radiant Realty,86631395,93561907,102918,58%,100%
+Warehouse,Prologis,L35593,W10772,Sweden,Crystal Clear Pools,18921086,18542664,17986,62%,100%
+Warehouse,Prologis,L82640,W10302,Russia,Infinite Horizons Travel,96061396,86455256,80403,83%,100%
+Warehouse,Prologis,L76006,W10572,Russia,Infinite Horizons Travel,88881000,85325760,90445,89%,95%
+Warehouse,Prologis,L82358,W10387,UK,Moonlight Music Academy,17190337,15643207,14861,61%,97%
+Warehouse,Prologis,L18085,W10789,Spain,Galaxy Graphics,13128871,13916603,12525,100%,100%
+Warehouse,Prologis,L50957,W10466,Sweden,Elemental Designs,49271976,50750135,47198,81%,100%
+Warehouse,Prologis,L43987,W10991,France,LunaTide Productions,59991502,58791672,55264,74%,92%
+Warehouse,Prologis,L67502,W10043,Sweden,Stellar Software Solutions,74020172,74020172,80682,65%,100%
+Warehouse,Prologis,L56604,W10721,France,LunaTide Productions,45952957,41357661,37635,59%,100%
+Warehouse,Prologis,L36851,W10317,Germany,Galactic Gaming Studios,14129435,15259790,15260,57%,100%
+Warehouse,Prologis,L50063,W10203,Russia,Phoenix Pharmaceuticals,35383459,38567970,37411,61%,100%
+Warehouse,Prologis,L45421,W10479,Germany,EchoStar Communications,27762451,28595325,27737,53%,73%
+Warehouse,Prologis,L72194,W10842,Russia,Infinite Horizons Travel,55920263,60953087,56686,59%,100%
+Warehouse,Prologis,L62184,W10730,France,Unity Web Solutions,69820343,71914953,76230,97%,100%
+Warehouse,Prologis,L55693,W10771,Spain,Zenith Marketing Group,90373198,89469466,96627,95%,100%
+Warehouse,Prologis,L24133,W10404,Netherlands,Cascade Construction,24297178,25755009,28073,80%,100%
+Warehouse,Prologis,L30622,W10799,Sweden,Serenity Salon & Spa,19999946,18999949,18050,50%,100%
+Warehouse,Prologis,L57903,W10202,Italy,SolarFlare Solar Panels,94662920,88036516,88037,48%,56%
+Warehouse,Prologis,L15099,W10609,Spain,Galaxy Graphics,45356016,49891618,51887,64%,64%
+Warehouse,Prologis,L21078,W10892,France,Fusion Foods Inc.,61819446,67383196,64688,93%,100%
+Warehouse,Prologis,L32280,W10274,Italy,Evolve Fitness Club,26078248,28425290,28710,100%,100%
+Warehouse,Prologis,L70581,W10994,Italy,Evolve Fitness Club,85731344,77158210,79473,80%,100%
+Warehouse,Prologis,L65402,W11000,France,Unity Web Solutions,27727657,29668593,28482,91%,100%
+Warehouse,Prologis,L41512,W10606,Portugal,TerraFirm Landscaping,84166290,85007953,76507,79%,100%
+Warehouse,Prologis,L67331,W10931,Italy,SilverLakes Realty,72839881,70654685,67828,85%,100%
+Warehouse,Prologis,L19953,W10081,UK,StellarTech Solutions,97325813,91486264,83253,69%,89%
+Warehouse,Prologis,L28085,W10700,Sweden,Zenith Zen Spa,5668078,5327993,5594,92%,100%
+Warehouse,Prologis,L19552,W10331,Sweden,Solaris Solutions,46482311,47876780,49313,84%,100%
+Warehouse,Prologis,L42165,W10661,Italy,SilverLakes Realty,57316316,60755295,61970,100%,100%
+Warehouse,Prologis,L66384,W10065,Germany,Firefly Technologies,96821464,103598966,96347,56%,62%
+Warehouse,Prologis,L72285,W10287,Netherlands,Everest Expeditions,25025024,23523523,22112,74%,100%
+Warehouse,Prologis,L45088,W10186,Spain,Horizon Law Firm,37890454,40921690,36830,100%,100%
+Warehouse,Prologis,L15918,W10613,France,GreenEarth Sustainable Living,83648584,81975612,77877,58%,100%
+Warehouse,Prologis,L89682,W10363,Portugal,Oasis Realty,22909885,23368083,23602,70%,96%
+Warehouse,Prologis,L52464,W10969,Spain,Galaxy Graphics,22816036,20990753,21201,91%,100%
+Warehouse,Prologis,L77512,W10989,Netherlands,Sunbeam Technologies,4737261,4737261,4311,56%,100%
+Warehouse,Prologis,L89843,W10672,Spain,Elemental Eats Catering,21687681,22338311,21668,90%,100%
+Warehouse,Prologis,L77788,W10599,Russia,Aurora Accounting Services,16880198,15360980,15668,55%,100%
+Warehouse,Prologis,L44830,W10683,Netherlands,Celestial Travel Agency,28004903,30525344,30525,100%,100%
+Warehouse,Prologis,L44590,W10107,Netherlands,Everest Expeditions,66421023,61107341,61107,60%,100%
+Warehouse,Prologis,L41649,W10361,France,LunaTide Productions,42782902,42355073,44473,92%,93%
+Warehouse,Prologis,L14766,W10704,Germany,SolarX Innovations,46799571,46799571,45864,57%,100%
+Warehouse,Prologis,L51800,W10144,UK,Harmony Health Foods,69287018,62358316,62358,88%,100%
+Warehouse,Prologis,L88352,W10798,Spain,Starship Security Services,84208383,76629629,81227,61%,100%
+Warehouse,Prologis,L50945,W10110,Germany,Radiant Cosmetics,72275216,66493199,70483,67%,100%
+Warehouse,Prologis,L52937,W10795,Portugal,Crimson Catering,38001632,38001632,37242,53%,100%
+Warehouse,Prologis,L86929,W10208,France,Elysian Fashion House,70055958,70055958,73559,52%,85%
+Warehouse,Prologis,L45903,W10342,UK,Horizon Harmonics Music School,4602670,4970884,4822,77%,100%
+Warehouse,Prologis,L30357,W10289,France,TerraVista Landscaping,68636526,71381987,73523,100%,100%
+Warehouse,Prologis,L22763,W10203,Russia,Phoenix Pharmaceuticals,67204033,67876073,74664,81%,81%
+Warehouse,Prologis,L11920,W10402,Spain,Elemental Eats Catering,21037233,22509839,24311,73%,100%
+Warehouse,Prologis,L62058,W10255,Portugal,Crimson Catering,52712632,49549874,47568,81%,89%
+Warehouse,Prologis,L47509,W10797,Russia,AquaSplash Water Park,77738953,85512848,78672,81%,100%
+Warehouse,Prologis,L76731,W10800,Netherlands,Quantum Innovations,56202244,51706064,51189,87%,100%
+Warehouse,Prologis,L17930,W10181,France,LunaTide Productions,89287417,92858914,87287,77%,100%
+Warehouse,Prologis,L12677,W10365,Russia,Aurora Engineering,59644630,56662399,58362,52%,93%
+Warehouse,Prologis,L39859,W10577,France,Tranquil Waters Spa,8570696,8227868,8557,75%,100%
+Warehouse,Prologis,L73186,W10780,Spain,Phoenix Fitness Center,89512233,81456132,81456,66%,100%
+Warehouse,Prologis,L67898,W10316,France,Luminous Events Planning,51133805,54201833,50950,70%,100%
+Warehouse,Prologis,L47375,W10410,Russia,TerraNova Environmental,85661802,77095622,81721,50%,80%
+Warehouse,Prologis,L87552,W10719,Netherlands,Sunbeam Technologies,17886877,17529139,16828,62%,75%
+Warehouse,Prologis,L69639,W10747,UK,Moonlight Music Academy,33508578,31833149,31833,83%,100%
+Warehouse,Prologis,L52840,W10735,Spain,Proxima Builders,78926956,71823530,71105,67%,100%
+Warehouse,Prologis,L58654,W10682,Sweden,Crystal Clear Pools,50309613,55340574,50360,100%,100%
+Warehouse,Prologis,L11972,W10971,Netherlands,Pinnacle Painters,21153005,19037705,20561,61%,91%
+Warehouse,Prologis,L67711,W10280,France,Unity Web Solutions,24177791,23210679,23443,86%,100%
+Warehouse,Prologis,L80860,W10719,Netherlands,Sunbeam Technologies,17647912,15883121,17471,52%,100%
+Warehouse,Prologis,L26456,W10004,Italy,Evolve Fitness Club,7026463,6745404,7285,69%,100%
+Warehouse,Prologis,L53130,W10426,Portugal,TerraFirm Landscaping,45527283,48714193,52611,95%,100%
+Warehouse,Prologis,L27664,W10208,France,Elysian Fashion House,22815665,21674882,23409,48%,87%
+Warehouse,Prologis,L38444,W10314,Netherlands,Cascade Construction,3502200,3467178,3363,89%,100%
+Warehouse,Prologis,L47547,W10281,Germany,Pacific Pearl Investments,56027513,58268614,53024,84%,100%
+Warehouse,Prologis,L62618,W10173,Germany,Atlas Logistics,5000994,5451083,5506,60%,87%
+Warehouse,Prologis,L47704,W10762,Spain,Elemental Eats Catering,79691006,72518815,79771,83%,99%
+Warehouse,Prologis,L50781,W10667,France,Tranquil Waters Spa,8509374,8679561,8766,100%,100%
+Warehouse,Prologis,L16995,W10444,Portugal,BrightWave Marketing,88076867,81911486,86826,58%,75%
+Warehouse,Prologis,L76158,W10533,Germany,Atlas Logistics,57596648,52412950,47172,72%,100%
+Warehouse,Prologis,L42673,W10944,Netherlands,Cascade Construction,46823270,44482107,45372,51%,100%
+Warehouse,Prologis,L87964,W10252,UK,Horizon Harmonics Music School,70133722,72939071,70022,67%,96%
+Warehouse,Prologis,L12715,W10650,Germany,Radiant Cosmetics,5472456,5636630,5355,95%,100%
+Warehouse,Prologis,L80549,W10842,Russia,Infinite Horizons Travel,29565287,31339204,33846,98%,100%
+Warehouse,Prologis,L56858,W10478,France,Elysian Fashion House,24605500,22883115,21281,54%,100%
+Warehouse,Prologis,L82717,W10858,Portugal,OceanView Real Estate,95391480,100161054,103166,91%,100%
+Warehouse,Prologis,L44533,W10164,Germany,SolarX Innovations,43488163,47836979,47359,68%,100%
+Warehouse,Prologis,L49581,W10840,Portugal,SolarWave Energy Solutions,78202271,77420248,75098,68%,100%
+Warehouse,Prologis,L73410,W10695,Germany,Firefly Technologies,71124267,66856811,71537,94%,100%
+Warehouse,Prologis,L84870,W10511,Sweden,Solaris Solutions,13796051,12692367,12439,81%,100%
+Warehouse,Prologis,L19906,W10724,Italy,Evolve Fitness Club,94415362,96303669,98230,86%,92%
+Warehouse,Prologis,L45580,W10859,Italy,Proxima Logistics,91929612,92848908,95634,78%,100%
+Warehouse,Prologis,L32320,W10359,Netherlands,Sunbeam Technologies,76354677,70246303,73759,80%,100%
+Warehouse,Prologis,L15628,W10769,Italy,Proxima Logistics,74707132,81430774,85502,62%,71%
+Warehouse,Prologis,L23316,W10097,Sweden,Aquatic Adventures,4427589,4029106,4029,50%,52%
+Warehouse,Prologis,L74285,W10200,Germany,Radiant Cosmetics,4541242,4632067,4632,71%,100%
+Warehouse,Prologis,L71234,W10592,Sweden,Crystal Clear Pools,25216270,25468433,27761,74%,100%
+Warehouse,Prologis,L12103,W10377,Netherlands,Everest Expeditions,99981789,102981243,92683,71%,73%
+Warehouse,Prologis,L54010,W10220,Italy,Serenity Yoga Studio,53935340,57710814,58865,85%,100%
+Warehouse,Prologis,L84848,W10935,Netherlands,Horizon Healthcare Group,47641744,51453084,50424,83%,100%
+Warehouse,Prologis,L67034,W10607,Italy,OceanView Oil & Gas,10603569,10179426,10994,54%,100%
+Warehouse,Prologis,L75194,W10245,Germany,Firefly Technologies,69819038,75404561,70880,83%,100%
+Warehouse,Prologis,L54544,W10670,Italy,Serenity Yoga Studio,67229791,63196004,68884,77%,85%
+Warehouse,Prologis,L30310,W10569,Germany,EchoStar Communications,2450727,2303683,2096,67%,100%
+Warehouse,Prologis,L55804,W10553,Italy,Golden Gate Catering,7608491,7836746,8542,66%,100%
+Warehouse,Prologis,L62010,W10723,Portugal,Oasis Realty,46569749,44241262,41144,66%,72%
+Warehouse,Prologis,L23571,W10683,Netherlands,Celestial Travel Agency,97291543,101183205,98148,92%,100%
+Warehouse,Prologis,L79737,W10249,Spain,Galaxy Graphics,84639065,87178237,94152,68%,100%
+Warehouse,Prologis,L36760,W10278,Netherlands,NovaTech Consulting,15149351,15149351,14089,61%,77%
+Warehouse,Prologis,L62267,W10588,Portugal,OceanView Real Estate,46711480,45310136,49388,70%,100%
+Warehouse,Prologis,L73435,W10338,Russia,SolarWinds Engineering,49313471,50792875,52825,100%,100%
+Warehouse,Prologis,L57467,W10433,France,GreenEarth Sustainable Living,14679480,15413454,14489,82%,100%
+Warehouse,Prologis,L74437,W10347,Russia,AquaSplash Water Park,81121538,77065461,70900,49%,100%
+Warehouse,Prologis,L50198,W10467,Netherlands,Everest Expeditions,64577974,67161093,65146,66%,100%
+Warehouse,Prologis,L24441,W10491,Russia,Envision Architects,43209356,39320514,37354,90%,100%
+Warehouse,Prologis,L65070,W10462,Portugal,Orion Analytics,47060800,46119584,46120,49%,100%
+Office,Prologis,L40449,W10240,Celestial Studios,Phoenix Fitness Center,75044667,69041094,72493,70%,100%
+Office,Prologis,L37162,W10766,Fusion Foods Inc.,Luminous Events Planning,77020892,80101728,80903,99%,100%
+Office,Prologis,L52510,W10383,GlobalGreen Energy,Phoenix Pharmaceuticals,86179861,84456264,76855,82%,100%
+Office,Prologis,L39272,W10959,GlobalGreen Energy,Aurora Accounting Services,8242959,8160529,8977,75%,100%
+Office,Prologis,L48355,W10801,StellarTech Solutions,StellarTech Solutions,88258291,96201537,91391,56%,77%
+Office,Prologis,L62242,W10229,Zenith Pharmaceuticals,Proxima Logistics,97099355,94186374,85710,70%,100%
+Office,Prologis,L74412,W10617,GlobalGreen Energy,AquaSplash Water Park,11140946,11586584,12629,64%,100%
+Office,Prologis,L16924,W10536,GlobalGreen Energy,GlobalGreen Energy,24665944,23432647,24604,56%,87%
+Office,Prologis,L72804,W10161,Quantum Innovations,Pinnacle Painters,53462509,51324009,50811,57%,100%
+Office,Prologis,L20354,W10521,Quantum Innovations,Pinnacle Painters,7809057,8121419,7472,54%,100%
+Office,Prologis,L21869,W10433,Fusion Foods Inc.,GreenEarth Sustainable Living,8138650,8952515,8684,86%,100%
+Office,Prologis,L39679,W10511,Nexus Financial Group,Solaris Solutions,4624151,4577909,4807,99%,100%
+Office,Prologis,L74551,W10477,StellarTech Solutions,Moonlight Music Academy,40748495,37081130,35598,79%,100%
+Office,Prologis,L39853,W10430,Nexus Financial Group,Zenith Zen Spa,86528850,84798273,83950,56%,76%
+Office,Prologis,L51222,W10856,Fusion Foods Inc.,Luminous Events Planning,76586921,75821052,78096,75%,100%
+Office,Prologis,L85272,W10371,Atlas Logistics,Pacific Pearl Investments,17701341,17878354,17878,78%,90%
+Office,Prologis,L77703,W10648,StellarTech Solutions,Alpine Cafe & Bistro,28561903,31132474,32378,100%,100%
+Office,Prologis,L17160,W10691,Nexus Financial Group,Solaris Solutions,21974460,20655992,20656,50%,100%
+Office,Prologis,L52571,W10983,Atlas Logistics,Atlas Logistics,68312006,62847046,65361,49%,100%
+Office,Prologis,L55958,W10880,Nexus Financial Group,Zenith Zen Spa,32828254,32828254,30202,62%,82%
+Office,Prologis,L75698,W10523,Fusion Foods Inc.,GreenEarth Sustainable Living,53414717,56619600,50958,71%,100%
+Office,Prologis,L22234,W10427,Zenith Pharmaceuticals,OceanView Oil & Gas,13943841,13943841,12549,86%,100%
+Office,Prologis,L74933,W10985,Zenith Pharmaceuticals,Zenith Pharmaceuticals,4952063,4803501,4804,93%,94%
+Office,Prologis,L31719,W10182,Atlas Logistics,Galaxy Motors,30354182,32782517,29832,80%,100%
+Office,Prologis,L71080,W10989,Quantum Innovations,Sunbeam Technologies,61942352,61322928,57030,94%,100%
+Office,Prologis,L59323,W10347,GlobalGreen Energy,AquaSplash Water Park,14094548,14658330,14512,99%,100%
+Office,Prologis,L56693,W10236,Atlas Logistics,Radiant Realty,54822126,58659675,61006,85%,100%
+Office,Prologis,L87478,W10795,BrightWave Marketing,Crimson Catering,18947491,18568541,17269,82%,100%
+Office,Prologis,L56677,W10373,Zenith Pharmaceuticals,Golden Gate Catering,17181499,17696944,16281,77%,100%
+Office,Prologis,L28368,W10364,Zenith Pharmaceuticals,Evolve Fitness Club,32378635,31731062,30145,61%,100%
+Mixed Use,Prologis,L32021,W10993,BrightWave Marketing,Oasis Realty,79452016,72301335,77362,71%,100%
+Mixed Use,Prologis,L67202,W10159,Celestial Studios,Galaxy Graphics,12375807,12747081,11727,63%,100%
+Mixed Use,Prologis,L59019,W10979,Nexus Financial Group,Serenity Salon & Spa,30388256,30388256,33123,93%,100%
+Mixed Use,Prologis,L63603,W10452,Atlas Logistics,Galaxy Motors,90390776,86775145,88511,58%,100%
+Mixed Use,Prologis,L22279,W10527,GlobalGreen Energy,AquaSplash Water Park,33100481,34424500,35457,98%,100%
+Mixed Use,Prologis,L22480,W10459,StellarTech Solutions,Solaris International,68295104,69661006,70358,93%,100%
+Mixed Use,Prologis,L57340,W10364,Zenith Pharmaceuticals,Evolve Fitness Club,5617654,5786184,6075,69%,100%
+Mixed Use,Prologis,L57778,W10525,BrightWave Marketing,Crimson Catering,58397663,64237429,59741,87%,100%
+Mixed Use,Prologis,L24411,W10925,Nexus Financial Group,Crimson Creative Agency,79258473,84013981,78973,84%,100%
+Mixed Use,Prologis,L59011,W10317,Atlas Logistics,Galactic Gaming Studios,14965522,14067591,12942,57%,100%
+Mixed Use,Prologis,L21006,W10781,Nexus Financial Group,Solaris Solutions,89182792,87399136,88273,83%,100%
+Mixed Use,Prologis,L71569,W10945,StellarTech Solutions,Quantum Quill Publishing,63968900,62049833,63911,55%,88%
+Mixed Use,Prologis,L16319,W10416,Atlas Logistics,Radiant Realty,31653511,34502327,37608,83%,100%
+Mixed Use,Prologis,L24681,W10992,Atlas Logistics,Galaxy Motors,8880330,9146740,9878,67%,100%
+Mixed Use,Prologis,L25174,W10185,GlobalGreen Energy,Aurora Engineering,77170005,76398305,79454,77%,95%
+Mixed Use,Prologis,L81912,W10431,Quantum Innovations,Pinnacle Painters,80343247,75522652,77788,82%,97%
+Mixed Use,Prologis,L48171,W10947,Atlas Logistics,Galactic Gaming Studios,73231814,78358041,82276,100%,100%
+Mixed Use,Prologis,L14967,W10935,Quantum Innovations,Horizon Healthcare Group,97262264,99207509,105160,62%,100%
+Mixed Use,Prologis,L32713,W10646,Nexus Financial Group,Elemental Designs,13182348,12786878,11892,54%,100%
+Mixed Use,Prologis,L50941,W10192,BrightWave Marketing,Orion Analytics,53228495,55889920,55890,76%,100%
+Mixed Use,Prologis,L62290,W10248,GlobalGreen Energy,SolarWinds Engineering,89177775,90961331,83684,90%,91%
+Mixed Use,Prologis,L80594,W10484,Nexus Financial Group,Pinnacle Productions,40934311,40524968,38093,58%,58%
+Mixed Use,Prologis,L22259,W10240,Celestial Studios,Phoenix Fitness Center,43187277,45778514,46236,63%,100%
+Mixed Use,Prologis,L56010,W10040,Zenith Pharmaceuticals,Serenity Yoga Studio,48894220,53783642,59162,100%,100%
+Mixed Use,Prologis,L14941,W10963,StellarTech Solutions,Alpine Adventures,18149432,19601387,18425,79%,100%
+Mixed Use,Prologis,L48165,W10857,Atlas Logistics,Galactic Gaming Studios,58629960,58629960,52767,92%,100%
+Mixed Use,Prologis,L84449,W10423,StellarTech Solutions,Alpine Adventures,86103177,89547304,92234,100%,100%
+Mixed Use,Prologis,L55570,W10180,StellarTech Solutions,Harmony Health Services,24782282,23295345,23528,68%,100%
+Mixed Use,Prologis,L38584,W10584,Quantum Innovations,Cascade Construction,96652972,90853794,95396,64%,100%
+Mixed Use,Prologis,L26319,W10368,Quantum Innovations,NovaTech Consulting,76477091,81065716,83498,70%,100%
+Mixed Use,Prologis,L53399,W10142,Nexus Financial Group,Crystal Clear Pools,98510247,102450657,94255,93%,100%
+Mixed Use,Prologis,L10292,W10938,Atlas Logistics,Thunderbird Aerospace,62037568,67000573,70351,84%,100%
+Mixed Use,Prologis,L41418,W10754,Nexus Financial Group,Pinnacle Productions,6146716,5532044,5421,86%,100%
+Mixed Use,Prologis,L71642,W10951,Celestial Studios,Zenith Marketing Group,36237534,37324660,41057,76%,100%
+Mixed Use,Prologis,L28199,W10426,BrightWave Marketing,TerraFirm Landscaping,93313042,94246172,87649,51%,88%
+Mixed Use,Prologis,L51200,W10402,Celestial Studios,Elemental Eats Catering,77286591,71103664,78214,79%,100%
+Mixed Use,Prologis,L63394,W10069,Celestial Studios,Galaxy Graphics,633484,608145,553,84%,87%
+Mixed Use,Prologis,L16467,W10206,Quantum Innovations,Firefly Technologies,33553913,34560530,34561,99%,100%
+Mixed Use,Prologis,L34177,W10969,Celestial Studios,Galaxy Graphics,28907869,30064184,29463,64%,100%
+Mixed Use,Prologis,L58452,W10206,Quantum Innovations,Firefly Technologies,3469082,3330319,3530,90%,90%
+Mixed Use,Prologis,L11956,W10259,Nexus Financial Group,Serenity Salon & Spa,34226893,35938238,32344,86%,100%
+Mixed Use,Prologis,L82735,W10201,BrightWave Marketing,Urban Fusion Architects,45198888,44294910,44295,75%,100%
+Mixed Use,Prologis,L19711,W10142,Nexus Financial Group,Crystal Clear Pools,70607008,66370588,72344,69%,100%
+Mixed Use,Prologis,L23880,W10651,BrightWave Marketing,Urban Fusion Architects,43865953,42111315,40006,68%,100%
+Mixed Use,Prologis,L30496,W10115,Nexus Financial Group,Crimson Creative Agency,23856029,26003072,24703,58%,84%
+Mixed Use,Prologis,L88062,W10079,Nexus Financial Group,Serenity Salon & Spa,30857121,31474263,31474,88%,100%
+Mixed Use,Prologis,L15811,W10871,Nexus Financial Group,Solaris Solutions,46244682,48556916,45158,64%,100%
+Mixed Use,Prologis,L28631,W10242,Quantum Innovations,Everest Expeditions,28837615,31433000,31433,98%,100%
+Mixed Use,Prologis,L42058,W10140,GlobalGreen Energy,TerraNova Environmental,14954603,16300517,15812,62%,100%
+Mixed Use,Prologis,L31137,W10982,Fusion Foods Inc.,Fusion Foods Inc.,60098116,55290267,56949,74%,100%
+Mixed Use,Prologis,L38801,W10598,Zenith Pharmaceuticals,Starry Skies Observatory,40989834,41399732,44298,80%,100%
+Mixed Use,Prologis,L25780,W10049,Zenith Pharmaceuticals,Proxima Logistics,15613313,15301047,14383,69%,100%
+Mixed Use,Prologis,L83770,W10334,Fusion Foods Inc.,Crimson Creative Agency,12458955,12832724,11549,53%,100%
+Mixed Use,Prologis,L39601,W10228,BrightWave Marketing,OceanView Real Estate,79469145,85031985,90134,97%,100%
+Mixed Use,Prologis,L34970,W10037,Fusion Foods Inc.,Tranquil Waters Spa,39857279,39458706,37880,55%,96%
+Mixed Use,Prologis,L29967,W10768,BrightWave Marketing,OceanView Real Estate,8369704,8202310,8694,90%,100%
+Mixed Use,Prologis,L26005,W10533,Atlas Logistics,Atlas Logistics,28004936,30245331,32665,77%,100%
+Mixed Use,Prologis,L33228,W10087,Celestial Studios,Celestial Studios,31194362,32442136,32442,76%,95%
+Mixed Use,Prologis,L87438,W10426,BrightWave Marketing,TerraFirm Landscaping,73480634,66132571,62165,89%,100%
+Mixed Use,Prologis,L24470,W10816,Celestial Studios,Horizon Law Firm,9363837,10112944,9810,100%,100%
+Mixed Use,Prologis,L63143,W10442,Fusion Foods Inc.,Fusion Foods Inc.,62734900,57716108,61756,51%,52%
+Mixed Use,Prologis,L16114,W10079,Nexus Financial Group,Serenity Salon & Spa,21564770,21996065,20456,85%,100%
+Mixed Use,Prologis,L75846,W10456,Celestial Studios,Horizon Law Firm,2613060,2874366,2961,90%,100%
+Mixed Use,Prologis,L72734,W10123,Celestial Studios,Zenith Capital Management,946672,852005,886,67%,100%
+Mixed Use,Prologis,L34147,W10792,StellarTech Solutions,Horizon Harmonics Music School,87719168,86841976,87710,51%,96%
+Mixed Use,Prologis,L28635,W10698,GlobalGreen Energy,SolarWinds Engineering,83596792,85268728,81858,95%,100%
+Mixed Use,Prologis,L13852,W10498,BrightWave Marketing,OceanView Real Estate,53049902,50927906,50928,92%,100%
+Mixed Use,Prologis,L14324,W10669,BrightWave Marketing,Starlight Financial Services,4508273,4733687,4308,86%,100%
+Mixed Use,Prologis,L21855,W10237,BrightWave Marketing,AquaTrek Adventures,90142291,86536599,86537,56%,82%
+Mixed Use,Prologis,L46685,W10745,Nexus Financial Group,Crimson Creative Agency,27953524,25996777,24177,92%,100%
+Mixed Use,Prologis,L81559,W10493,Nexus Financial Group,Stellar Software Solutions,51896433,55010219,53360,57%,100%
+Mixed Use,Prologis,L78801,W10070,Nexus Financial Group,Zenith Zen Spa,4347612,4608469,4701,75%,100%
+Mixed Use,Prologis,L65248,W10706,Zenith Pharmaceuticals,Elemental Artistry,15054085,13548677,13142,62%,100%
