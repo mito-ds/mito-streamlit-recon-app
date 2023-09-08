@@ -8,8 +8,8 @@ from custom_imports import get_sales_data, get_european_estate_data
 from custom_spreadsheet_functions import CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE
 from utils import * 
 
-RECON_NAME = "Commercial European Real Estate"
-RECON_DESCRIPTION = "Compare Commercial Real Estate leases at the unit level from Snowflake and data provided by vendors"
+RECON_NAME = "Residential"
+RECON_DESCRIPTION = "Residential recon"
 RECON_VALUE = "12.0"
 
 RECON_SETUP_MODE_KEY = f"recon_setup_mode_{RECON_NAME}"

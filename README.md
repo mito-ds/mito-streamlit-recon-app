@@ -50,3 +50,32 @@ If you make changes to the app's architecture and/or want to clear all previous 
 bash dev/reset_app.sh
 ```
  
+### Demoing this app
+Step 1: Import database data
+- Custom Import the get_european_real_estate_data
+
+Step 2: Import vendor-provided data
+- Import the Warehouse v1 and Prologis v1
+- In Warehouse v1, Tenant Name column, =SUBSTITUTE('Tenant Name0, 'Grp.', 'Group')
+- In Warehouse v1, rename SQM to Square Meters
+- In Prologis v1, filter the Strategy column to just warehouse
+- Concat the tables on top of eachother. Its better to do Warehouse on top then Prologis
+
+Step 3: Create dataset for recon 
+- Merge that datasets together on the Lease ID column. You can use Asset ID also if you want to show off composite key
+
+Step 4: Build the recon
+- Use the =CHECK_STRING_DIFFERENCE formula with a similarity threshold of 90
+- Use the =CHECK_NUMBER_DIFFERENCE formula with a threshold of 10
+
+Step 5: Show recon report in app
+- Generate the recon
+- Scroll down to show the results
+- Click the Save Button
+
+Step 6: Show updated dashboard
+- Show the updated dashboard
+
+Step 7: Rerun the recon
+- Click on the recon you just built and update it by importing the new files
+- Show that in the new dataset, there are no failing tests

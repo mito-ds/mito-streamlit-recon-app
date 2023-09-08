@@ -9,7 +9,11 @@ with st.form(key='create_new_recon_form'):
     recon_description = st.text_area('Recon Description')
     recon_value = st.number_input('How much time do you spend per quarter building this recon?')
 
-    submitted = st.form_submit_button("Generate New Recon Wizard", on_click=create_new_recon(recon_report_name, recon_description, recon_value))
+    submitted = st.form_submit_button("Generate New Recon Wizard")
 
 if submitted:
-    st.success(f'Created a new recon wizard. Click on the new tab {recon_report_name} to configure it.')
+    success, message = create_new_recon(recon_report_name, recon_description, recon_value)
+    if not success:
+        st.error(message)
+    else:
+        st.success(f'Created a new recon wizard. Click on the new tab **Recon: {recon_report_name}** to configure it.')
