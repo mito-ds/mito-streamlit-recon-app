@@ -1,0 +1,10 @@
+Date,Check,Outcome,Count
+2023-09-08 14:22:37.006111,Tenant Name Check,Match,797
+2023-09-08 14:22:37.006111,Tenant Name Check,Immaterial,0
+2023-09-08 14:22:37.006111,Tenant Name Check,Failing,0
+2023-09-08 14:22:37.006111,Estimated Rental Value Check,Match,641
+2023-09-08 14:22:37.006111,Estimated Rental Value Check,Immaterial,153
+2023-09-08 14:22:37.006111,Estimated Rental Value Check,Failing,3
+2023-09-08 14:22:37.006111,Net Effective Rent Check,Match,641
+2023-09-08 14:22:37.006111,Net Effective Rent Check,Immaterial,155
+2023-09-08 14:22:37.006111,Net Effective Rent Check,Failing,1

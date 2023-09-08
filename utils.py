@@ -200,7 +200,7 @@ def finalize_code_string(function_string, new_imports_string, rename_imports_str
             # Add a tab before each line in new_imports_string and rename_imports_string
             new_lines.append('    from mitosheet.public.v3 import SUBSTITUTE')
             new_lines.append('    import pandas as pd')
-            new_lines.append('    from custom_imports import get_sales_data, get_european_estate_data')
+            new_lines.append('    from custom_imports import get_sales_data, get_european_real_estate_data')
             new_lines.append('    from custom_spreadsheet_functions import CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE')
 
             new_imports_string = '\n'.join(['    ' + l for l in new_imports_string.split('\n')])
