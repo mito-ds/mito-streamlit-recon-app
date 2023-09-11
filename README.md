@@ -1,6 +1,8 @@
 # Reconciliation App
 Centralize and automate your organizations's data reconciliation. Save your organization hundreds of hours of manual work each quarter. 
 
+[See the app in action](https://www.loom.com/share/ed87167b23ce4529ad7b369b53264709?sid=bfa672ed-d9c8-4dc6-9566-ecbb2f3ba2cc)
+
 Users of the reconciliation app interact with three main componets:
 1. Reconciliation Dashboard: shows the current status of all the reconciliations your organization has created. Including:
 - Number of rules checked
