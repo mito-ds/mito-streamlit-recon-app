@@ -1,8 +1,10 @@
 import streamlit as st
 from metaprogramming_utils import create_new_recon
+from Dashboard import ENTERPRISE_NAME
 
 st.set_page_config(layout="wide")
-st.title("Setup a New Recon Dashboard")
+st.title("Setup a New Recon")
+st.markdown(f'To start a build a new recon, follow the steps below. If you have questions, If you have questions about creating a new reconciliation process, contact [{ENTERPRISE_NAME} Data Governance](mailto:aaron@sagacollab.com).')
 
 with st.form(key='create_new_recon_form'):
     recon_report_name = st.text_input('Recon Name')

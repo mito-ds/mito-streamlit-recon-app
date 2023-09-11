@@ -8,8 +8,11 @@ from mitosheet.streamlit.v1 import spreadsheet
 from utils import get_most_recent_outputs_paths, METADATE_FILE_PATH
 from custom_spreadsheet_functions import MATCH, IMMATERIAL, FAIL
 
+ENTERPRISE_NAME = 'Mito'
+
 st.set_page_config(layout="wide")
-st.title("Recon Dashboard")
+st.title(f"{ENTERPRISE_NAME} Recon Dashboard")
+st.markdown(f'This application is home to data reconciliation processes across {ENTERPRISE_NAME}. If you have questions about creating a new reconciliation process, contact [{ENTERPRISE_NAME} Data Governance](mailto:aaron@sagacollab.com).')
 
 # For each folder in the outputs folder, get the csv file that has the latest date and time based on the filename
 most_recent_ouput_paths_dict = get_most_recent_outputs_paths()
