@@ -4,7 +4,7 @@ from mitosheet.streamlit.v1 import spreadsheet
 from mitosheet.public.v3 import *
 import plotly.express as px
 from datetime import datetime
-from custom_imports import get_sales_data, get_european_estate_data
+from custom_imports import get_sales_data, get_european_real_estate_data
 from custom_spreadsheet_functions import CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE
 from utils import * 
 
@@ -66,7 +66,7 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
 
         new_import_prompt = st.empty()
 
-        new_df_names_and_dfs, new_imports_string = spreadsheet(import_folder='./data', key='update_recon', importers=[get_sales_data, get_european_estate_data])
+        new_df_names_and_dfs, new_imports_string = spreadsheet(import_folder='./data', key='update_recon', importers=[get_sales_data, get_european_real_estate_data])
         new_df_names = list(new_df_names_and_dfs.keys())
 
         def get_new_import_prompt(new_df_names: list, original_imported_df_names: list) -> str:
@@ -160,7 +160,7 @@ else:
     
     # Display the data inside of the spreadsheet so the user can easily fix data quality issues.
     dfs, code = spreadsheet(
-        importers=[get_sales_data, get_european_estate_data], 
+        importers=[get_sales_data, get_european_real_estate_data], 
         import_folder='./data', 
         sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE],
         code_options={'as_function': True, 'call_function': False, 'function_name': f'MITO_GENERATED_RECON_FUNCTION_{safe_recon_name}', 'function_params': {}},

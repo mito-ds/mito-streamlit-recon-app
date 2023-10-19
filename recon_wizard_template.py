@@ -1,6 +1,7 @@
+from mitosheet.types import ParamMetadata
 import streamlit as st
 import pandas as pd
-from mitosheet.streamlit.v1 import spreadsheet
+from mitosheet.streamlit.v1 import spreadsheet, MitoAnalysis
 from mitosheet.public.v3 import *
 import plotly.express as px
 from datetime import datetime
@@ -60,14 +61,26 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
         st.session_state[UPDATE_RECON_KEY] = True
 
     if st.session_state[UPDATE_RECON_KEY]:
-        recon_function_string = get_recon_script(RECON_NAME)
+        original_analysis = MitoAnalysis.from_json(get_recon_script(RECON_NAME))
 
-        recon_function_string, original_imported_df_names = remove_import_code_and_get_df_names(recon_function_string)
+        def map_param_to_name(param: ParamMetadata):
+            return param['name']
+
+        recon_function_string = original_analysis.fully_parameterized_function
+        original_imported_df_names = list(map(
+            map_param_to_name,
+            original_analysis.get_param_metadata('import')
+        ))
 
         new_import_prompt = st.empty()
 
-        new_df_names_and_dfs, new_imports_string = spreadsheet(import_folder='./data', key='update_recon', importers=[get_sales_data, get_european_real_estate_data])
-        new_df_names = list(new_df_names_and_dfs.keys())
+        new_analysis: MitoAnalysis = spreadsheet(
+            import_folder='./data', 
+            key='update_recon', 
+            importers=[get_sales_data, get_european_real_estate_data], 
+            return_type='analysis'
+        )
+        new_df_names = new_analysis.get_param_metadata('import')
 
         def get_new_import_prompt(new_df_names: list, original_imported_df_names: list) -> str:
             if len(new_df_names) == len(original_imported_df_names):
@@ -80,7 +93,7 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
         if st.button("Rerun Recon", key='rerun_recon', disabled=len(new_df_names) != len(original_imported_df_names)):     
 
             # Remove the package imports since we've already imported them in the recon_function
-            new_imports_string = remove_package_imports(new_imports_string)
+            new_imports_string = remove_package_imports(new_analysis.fully_parameterized_function)
 
             # Rename the imports to the original names
             rename_imports_strings = []
@@ -90,10 +103,7 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
 
             rename_imports_string = '\n'.join(rename_imports_strings)
 
-            recon_function_string = finalize_code_string(recon_function_string, new_imports_string, rename_imports_string)
-
-            recon_function = get_new_function(recon_function_string)
-            recon_function_dfs = recon_function()
+            recon_function_dfs = original_analysis.run()
 
             # Get the last dataframe from the recon_function_dfs
             recon_result_df = recon_function_dfs[-1]
@@ -159,21 +169,28 @@ else:
     safe_recon_name = RECON_NAME.replace(' ', '_')
     
     # Display the data inside of the spreadsheet so the user can easily fix data quality issues.
-    dfs, code = spreadsheet(
+    analysis: MitoAnalysis = spreadsheet(
         importers=[get_sales_data, get_european_real_estate_data], 
         import_folder='./data', 
         sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE],
         code_options={'as_function': True, 'call_function': False, 'function_name': f'MITO_GENERATED_RECON_FUNCTION_{safe_recon_name}', 'function_params': {}},
-        key='setup_recon'
+        key='setup_recon',
+        return_type='analysis'
     )
 
-    dfs = list(dfs.values())
-    recon_raw_data_df = dfs[-1] if len(dfs) > 0 else None
+    imports = analysis.get_param_metadata('import')
+    st.code(analysis.fully_parameterized_function)
+    output_dfs = analysis.run()
+    recon_raw_data_df = None
+    if isinstance(output_dfs, pd.DataFrame):
+        recon_raw_data_df = output_dfs
+    elif isinstance(output_dfs, tuple) and len(output_dfs) > 0:
+        recon_raw_data_df = output_dfs[-1]
         
     if st.session_state[RECON_CONFIGURATION_STEP_KEY] > 4:
         # Save the recon metadata to the metadata file so we can display info about it in the app dashboard
         add_recon_to_metadata(RECON_NAME, RECON_DESCRIPTION, RECON_VALUE)
-        save_recon_script(RECON_NAME, code)
+        save_recon_script(RECON_NAME, analysis.to_json())
 
         dfs = get_recon_report(recon_raw_data_df)
 
