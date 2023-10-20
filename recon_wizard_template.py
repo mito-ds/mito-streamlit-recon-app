@@ -63,12 +63,12 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
     if st.session_state[UPDATE_RECON_KEY]:
         original_analysis = MitoAnalysis.from_json(get_recon_analysis(RECON_NAME))
 
-        def map_param_to_name(param: ParamMetadata):
-            return param['name']
+        def map_param_to_value(param: ParamMetadata):
+            return param['initial_value'] if param['initial_value'] != '' else param['name']
 
         recon_function_string = original_analysis.fully_parameterized_function
         original_imported_df_names = list(map(
-            map_param_to_name,
+            map_param_to_value,
             original_analysis.get_param_metadata('import')
         ))
 
