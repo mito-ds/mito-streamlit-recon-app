@@ -61,7 +61,7 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
         st.session_state[UPDATE_RECON_KEY] = True
 
     if st.session_state[UPDATE_RECON_KEY]:
-        original_analysis = MitoAnalysis.from_json(get_recon_script(RECON_NAME))
+        original_analysis = MitoAnalysis.from_json(get_recon_analysis(RECON_NAME))
 
         def map_param_to_name(param: ParamMetadata):
             return param['name']
@@ -91,18 +91,6 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
         new_import_prompt.success(get_new_import_prompt(new_df_names, original_imported_df_names))
 
         if st.button("Rerun Recon", key='rerun_recon', disabled=len(new_df_names) != len(original_imported_df_names)):     
-
-            # Remove the package imports since we've already imported them in the recon_function
-            new_imports_string = remove_package_imports(new_analysis.fully_parameterized_function)
-
-            # Rename the imports to the original names
-            rename_imports_strings = []
-            original_and_new_df_names = {df_name: df for df_name, df in zip(original_imported_df_names, new_df_names)}
-            for original_imported_df_names, new_df in original_and_new_df_names.items():
-                rename_imports_strings.append(f'{original_imported_df_names} = {new_df}')
-
-            rename_imports_string = '\n'.join(rename_imports_strings)
-
             recon_function_dfs = original_analysis.run()
 
             # Get the last dataframe from the recon_function_dfs
@@ -179,7 +167,6 @@ else:
     )
 
     imports = analysis.get_param_metadata('import')
-    st.code(analysis.fully_parameterized_function)
     output_dfs = analysis.run()
     recon_raw_data_df = None
     if isinstance(output_dfs, pd.DataFrame):
@@ -190,7 +177,7 @@ else:
     if st.session_state[RECON_CONFIGURATION_STEP_KEY] > 4:
         # Save the recon metadata to the metadata file so we can display info about it in the app dashboard
         add_recon_to_metadata(RECON_NAME, RECON_DESCRIPTION, RECON_VALUE)
-        save_recon_script(RECON_NAME, analysis.to_json())
+        save_recon_analysis(RECON_NAME, analysis.to_json())
 
         dfs = get_recon_report(recon_raw_data_df)
 
