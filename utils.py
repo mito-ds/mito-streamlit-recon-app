@@ -133,90 +133,15 @@ def add_recon_to_metadata(recon_name, recon_description, recon_value):
     df.loc[len(df)] = new_row
     df.to_csv(METADATE_FILE_PATH, index=False)
 
-def save_recon_script(recon_name, code):
+def save_recon_analysis(recon_name, analysis):
     path = get_recon_path(recon_name)
     with open(path, 'w') as file:
-        file.write(code)
+        file.write(analysis)
    
-def get_recon_script(recon_name):
+def get_recon_analysis(recon_name):
     path = get_recon_path(recon_name)
     with open(path, 'r') as file:
         return file.read()
 
 def get_recon_path(recon_name):
     return os.path.join('recon-scripts', recon_name + '.py')
-
-def get_new_function(function_string: str):
-    functions_before = [f for f in locals().values() if callable(f)]
-    exec(function_string)
-    functions = [f for f in locals().values() if callable(f) and f not in functions_before]
-
-    for f in functions:
-        # Return the Mito generated recon function so that we don't get tripped up 
-        # by other functions that are imported, ie: custom sheet functions
-        if "MITO_GENERATED_RECON_FUNCTION_" in f.__name__:
-            return f
-
-def remove_import_code_and_get_df_names(function_string: str) -> tuple[str, list[str]]:
-    # Find the lines that start with "Imported" and then remove that line and the next one
-    lines = function_string.split('\n')
-    new_lines = []
-    df_names = []
-    skip_next_line = False
-    for line in lines: 
-        if skip_next_line or "pd.read_csv" in line:
-            # Reset the skip_next_line flag 
-            skip_next_line = False
-            
-            # Get the df name from the line 
-            df_name = line.split('=')[0].strip()
-            df_names.append(df_name)
-
-            # Don't add this line
-            continue 
-
-        # Check if the word "Imported" is in the line
-        if "Imported" in line:
-            skip_next_line = True
-        else:
-            new_lines.append(line)
-
-    return '\n'.join(new_lines), df_names
-
-
-def finalize_code_string(function_string, new_imports_string, rename_imports_string) -> str: 
-    """
-    1. Adds an import statement for custom importers and sheet functions 
-    2. Adds the new imported dataframes that we're going to replay the analysis on
-    3. Rename the newly imported dataframes to the original names so we can rerun the code 
-    """
-    # After the def line, add the new_imports_string and rename_imports_string
-    lines = function_string.split('\n')
-    new_lines = []
-
-    for line in lines:
-        new_lines.append(line)
-        if "def " in line:
-            # Add a tab before each line in new_imports_string and rename_imports_string
-            new_lines.append('    from mitosheet.public.v3 import SUBSTITUTE')
-            new_lines.append('    import pandas as pd')
-            new_lines.append('    from custom_imports import get_sales_data, get_european_real_estate_data')
-            new_lines.append('    from custom_spreadsheet_functions import CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE')
-
-            new_imports_string = '\n'.join(['    ' + l for l in new_imports_string.split('\n')])
-            rename_imports_string = '\n'.join(['    ' + l for l in rename_imports_string.split('\n')])
-            new_lines.append(new_imports_string)
-            new_lines.append(rename_imports_string)
-    return '\n'.join(new_lines)
-
-def remove_package_imports(python_code) -> str:
-    # Remove the package imports from the code
-    lines = python_code.split('\n')
-    new_lines = []
-    for line in lines:
-        if "import " in line:
-            continue
-        if "from " in line:
-            continue
-        new_lines.append(line)
-    return '\n'.join(new_lines)

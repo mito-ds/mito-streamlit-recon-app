@@ -3,7 +3,7 @@ import pandas as pd
 
 def MITO_GENERATED_RECON_FUNCTION_Residential():
     # Imported df1 using get_european_estate_data
-    df1 = get_european_estate_data(sector='Residential')
+    df1 = get_european_real_estate_data(sector='Residential')
     
     # Imported Prologis v1.csv, Warehouse REIT v1.csv
     Prologis_v1 = pd.read_csv(r'/Users/aarondiamond-reivich/Mito/streamlit-recon-wizard/data/commercial leases/Prologis v1.csv')
