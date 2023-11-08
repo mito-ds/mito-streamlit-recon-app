@@ -1,7 +1,7 @@
 from mitosheet.types import ParamMetadata
 import streamlit as st
 import pandas as pd
-from mitosheet.streamlit.v1 import spreadsheet, MitoAnalysis
+from mitosheet.streamlit.v1 import spreadsheet, RunnableAnalysis
 from mitosheet.public.v3 import *
 import plotly.express as px
 from datetime import datetime
@@ -61,10 +61,10 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
         st.session_state[UPDATE_RECON_KEY] = True
 
     if st.session_state[UPDATE_RECON_KEY]:
-        original_analysis = MitoAnalysis.from_json(get_recon_analysis(RECON_NAME))
+        original_analysis = RunnableAnalysis.from_json(get_recon_analysis(RECON_NAME))
 
         def map_param_to_value(param: ParamMetadata):
-            return param['initial_value'] if param['initial_value'] != '' else param['name']
+            return param['original_value'] if param['original_value'] != '' else param['name']
 
         recon_function_string = original_analysis.fully_parameterized_function
         original_imported_df_names = list(map(
@@ -74,7 +74,7 @@ if previous_recon_report_path and not st.session_state[RECON_SETUP_MODE_KEY]:
 
         new_import_prompt = st.empty()
 
-        new_analysis: MitoAnalysis = spreadsheet(
+        new_analysis: RunnableAnalysis = spreadsheet(
             import_folder='./data', 
             key='update_recon', 
             importers=[get_sales_data, get_european_real_estate_data], 
@@ -157,7 +157,7 @@ else:
     safe_recon_name = RECON_NAME.replace(' ', '_')
     
     # Display the data inside of the spreadsheet so the user can easily fix data quality issues.
-    analysis: MitoAnalysis = spreadsheet(
+    analysis: RunnableAnalysis = spreadsheet(
         importers=[get_sales_data, get_european_real_estate_data], 
         import_folder='./data', 
         sheet_functions=[CHECK_NUMBER_DIFFERENCE, CHECK_STRING_DIFFERENCE],
